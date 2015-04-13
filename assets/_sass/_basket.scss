@@ -1,0 +1,21 @@
+#basket {
+	input { width: 70%; }
+	.money { font-size: 1.5em; }
+	.continue { @extend button; }
+	img { max-height: 50%; max-width: 70%; }
+	table { width: 95%;  margin: 1% 2.5%; }
+
+	td:last-child, th:last-child {
+  	width: 10px;
+
+  	a {
+			color: #868282;
+		  position: relative;
+		  left: -25px;
+		  font-size: 1.3em;
+
+		  &:hover { color: #333 };
+  	}
+	}
+}
+

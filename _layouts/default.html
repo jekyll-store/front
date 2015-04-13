@@ -1,0 +1,16 @@
+---
+#layout: compress
+---
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+
+    <div class='wrapper-for-content-outside-of-footer'>
+      {% include centered_navigation.html %}
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+  </body>
+</html>

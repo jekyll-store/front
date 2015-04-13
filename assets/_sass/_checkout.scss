@@ -1,0 +1,41 @@
+#checkout {
+	@include media($large-screen) {
+		section { @include span-columns(6); }
+	}
+	fieldset { margin: 1em; }
+	.title { text-align: center; }
+	select { @extend textarea; }
+
+	.button-group {
+	  width: 48%;
+	  display: inline-block;
+	  vertical-align: middle;
+	}
+
+	h2 {
+		width: 45%;
+		display: inline-block;
+		text-align: center;
+		vertical-align: middle;
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+
+  table { margin-top: -1em; }
+
+  td, th { text-align: right; }
+
+  #purchase button {
+  	width: 100%;
+  	font-size: 1.2em;
+  }
+
+  #warning {
+  	box-shadow: 0 0 1px 1px #FF6161;
+	  background: #FCE7E7;
+	  color: #4A4A4A;
+	  padding: 0.75em;
+
+	  li { letter-spacing: 0.1em; }
+  }
+}

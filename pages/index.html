@@ -1,0 +1,19 @@
+---
+layout: default
+permalink: /
+---
+
+<main id='index'>
+</main>
+
+<script type='text/jsx'>
+
+  React.render((
+    <div>
+      <Filters />
+      <Display />
+      <Pagination pageSize={6} />
+    </div>
+  ), document.getElementById('index'));
+
+</script>

@@ -1,0 +1,70 @@
+---
+layout: default
+permalink: /checkout/
+---
+
+<main id='checkout'>
+  <h1 class='title'>Checkout</h1>
+  <div id='errors'></div>
+  <form onsubmit='submitPurchase(this)'>
+    <section>
+      <fieldset>
+        <input type='text' name='address.name' placeholder='Name' required />
+        <input type='email'name='address.email' placeholder='Email' required />
+        <input type='text' name='address.address1' placeholder='Address 1'
+               required />
+        <input type='text' name='address.address2'
+               placeholder='Address 2 (optional)' />
+        <input type='text' name='address.city' placeholder='City' required />
+        <input type='text' name='address.county' placeholder='County' required />
+        <div id='countries'></div>
+        <input type='text' name='address.postcode' placeholder='Postcode'
+               required />
+      </fieldset>
+      <fieldset id='delivery'>
+      </fieldset>
+    </section>
+    <section>
+      <fieldset id='warning'>
+        <p>This is demo site. Please use one of the following test card numbers:</p>
+        <ul>
+          <li>4111111111111111</li>
+          <li>5500000000000004</li>
+        </ul>
+      </fieldset>
+      <fieldset id='card' onfocus='showWarning()'>
+      </fieldset>
+      <fieldset id='purchase'>
+        <div id='order-summary'></div>
+        <button type='submit'>Purchase!</button>
+      </fieldset>
+    </section>
+  </form>
+</main>
+
+<script type='text/jsx'>
+  React.render(<Errors />,          document.getElementById('errors'));
+  React.render(<CountriesSelect />, document.getElementById('countries'));
+  React.render(<DeliverySelect />,  document.getElementById('delivery'));
+  React.render(<Card />,            document.getElementById('card'));
+  React.render(<OrderSummary />,    document.getElementById('order-summary'));
+
+  function submitPurchase(form) {
+    event.preventDefault();
+    form = form2js(form);
+    splitExpiry(form);
+    form.card.number = form.card.number.replace(/ /g, '');
+    JSE.Actions.purchase(form);
+  }
+
+  function splitExpiry(form) {
+    var expiry = form.card.expiry.split(' / ');
+    form.card.month = expiry[0];
+    form.card.year = expiry[1];
+    delete form.card.expiry;
+  }
+
+  JSE.Actions.completed.listen(function() {
+    window.location.href = "{{ '/thankyou' | prepend: site.baseurl }}";
+  });
+</script>

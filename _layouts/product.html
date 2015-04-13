@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<main id='product'>
+	<aside>
+    <img src='{{ page.images[0] }}' alt='{{ page.name }}' />
+		<table>
+			<tr> <th> Type      </th> <td> {{ page.type }}      </td> </tr>
+			<tr> <th> Condition </th> <td> {{ page.condition }} </td> </tr>
+			<tr> <th> Weight    </th> <td> {{ page.weight }}kg </td> </tr>
+		</table>
+	</aside>
+	<article>
+		<header>
+			<h1>{{ page.name }}</h1>
+			<h2>£{{ page.price }}</h2>
+		</header>
+		<div id='addToBasket'></div>
+		<section>
+			<p>{{ content }}</p>
+      <img src='{{ page.images[1] }}' alt='{{ page.name }}' />
+		</section>
+	</article>
+</main>
+
+<script type='text/jsx'>
+  React.render(
+  	<AddToBasket name="{{ page.name }}" />,
+  	document.getElementById('addToBasket')
+  );
+
+  JSE.Stores.Basket.listen(function() {
+  	window.location.href = "{{ '/basket' | prepend: site.baseurl }}";
+  });
+</script>

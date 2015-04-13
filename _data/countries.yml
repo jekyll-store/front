@@ -1,0 +1,681 @@
+- name: Afghanistan
+  iso: AF
+  zones: [International, Asia]
+- name: Albania
+  iso: AL
+  zones: [International, Europe]
+- name: Algeria
+  iso: DZ
+  zones: [International, Africa]
+- name: American Samoa
+  iso: AS
+  zones: [International, Oceanian]
+- name: Andorra
+  iso: AD
+  zones: [International, Europe]
+- name: Angola
+  iso: AO
+  zones: [International, Africa]
+- name: Anguilla
+  iso: AI
+  zones: [International, North America]
+- name: Antigua and Barbuda
+  iso: AG
+  zones: [International, North America]
+- name: Argentina
+  iso: AR
+  zones: [International, South America]
+- name: Armenia
+  iso: AM
+  zones: [International, Asia]
+- name: Aruba
+  iso: AW
+  zones: [International, North America]
+- name: Australia
+  iso: AU
+  zones: [International, Oceanian]
+- name: Austria
+  iso: AT
+  zones: [International, Europe]
+- name: Azerbaijan
+  iso: AZ
+  zones: [International, Asia]
+- name: Bahamas
+  iso: BS
+  zones: [International, North America]
+- name: Bahrain
+  iso: BH
+  zones: [International, Asia]
+- name: Bangladesh
+  iso: BD
+  zones: [International, Asia]
+- name: Barbados
+  iso: BB
+  zones: [International, North America]
+- name: Belarus
+  iso: BY
+  zones: [International, Europe]
+- name: Belgium
+  iso: BE
+  zones: [International, Europe]
+- name: Belize
+  iso: BZ
+  zones: [International, North America]
+- name: Benin
+  iso: BJ
+  zones: [International, Africa]
+- name: Bermuda
+  iso: BM
+  zones: [International, North America]
+- name: Bhutan
+  iso: BT
+  zones: [International, Asia]
+- name: Bolivia
+  iso: BO
+  zones: [International, South America]
+- name: Bosnia and Herzegovina
+  iso: BA
+  zones: [International, Europe]
+- name: Botswana
+  iso: BW
+  zones: [International, Africa]
+- name: Brazil
+  iso: BR
+  zones: [International, South America]
+- name: Brunei Darussalam
+  iso: BN
+  zones: [International, Asia]
+- name: Bulgaria
+  iso: BG
+  zones: [International, Europe]
+- name: Burkina Faso
+  iso: BF
+  zones: [International, Africa]
+- name: Burundi
+  iso: BI
+  zones: [International, Africa]
+- name: Cambodia
+  iso: KH
+  zones: [International, Asia]
+- name: Cameroon
+  iso: CM
+  zones: [International, Africa]
+- name: Canada
+  iso: CA
+  zones: [International, North America]
+- name: Cape Verde
+  iso: CV
+  zones: [International, Africa]
+- name: Cayman Islands
+  iso: KY
+  zones: [International, North America]
+- name: Central African Republic
+  iso: CF
+  zones: [International, Africa]
+- name: Chad
+  iso: TD
+  zones: [International, Africa]
+- name: Chile
+  iso: CL
+  zones: [International, South America]
+- name: China
+  iso: CN
+  zones: [International, Asia]
+- name: Colombia
+  iso: CO
+  zones: [International, South America]
+- name: Comoros
+  iso: KM
+  zones: [International, Africa]
+- name: Congo
+  iso: CD
+  zones: [International, Africa]
+- name: Congo
+  iso: CG
+  zones: [International, Africa]
+- name: Cook Islands
+  iso: CK
+  zones: [International, Oceanian]
+- name: Costa Rica
+  iso: CR
+  zones: [International, North America]
+- name: "Cote D'Ivoire"
+  iso: CI
+  zones: [International, Africa]
+- name: Croatia
+  iso: HR
+  zones: [International, Europe]
+- name: Cuba
+  iso: CU
+  zones: [International, North America]
+- name: Cyprus
+  iso: CY
+  zones: [International, Europe]
+- name: Czech Republic
+  iso: CZ
+  zones: [International, Europe]
+- name: Denmark
+  iso: DK
+  zones: [International, Europe]
+- name: Djibouti
+  iso: DJ
+  zones: [International, Africa]
+- name: Dominica
+  iso: DM
+  zones: [International, North America]
+- name: Dominican Republic
+  iso: DO
+  zones: [International, North America]
+- name: Ecuador
+  iso: EC
+  zones: [International, South America]
+- name: Egypt
+  iso: EG
+  zones: [International, Africa]
+- name: El Salvador
+  iso: SV
+  zones: [International, North America]
+- name: Equatorial Guinea
+  iso: GQ
+  zones: [International, Africa]
+- name: Eritrea
+  iso: ER
+  zones: [International, Africa]
+- name: Estonia
+  iso: EE
+  zones: [International, Europe]
+- name: Ethiopia
+  iso: ET
+  zones: [International, Africa]
+- name: Falkland Islands (Malvinas)
+  iso: FK
+  zones: [International, South America]
+- name: Faroe Islands
+  iso: FO
+  zones: [International, Europe]
+- name: Fiji
+  iso: FJ
+  zones: [International, Oceanian]
+- name: Finland
+  iso: FI
+  zones: [International, Europe]
+- name: France
+  iso: FR
+  zones: [International, Europe]
+- name: French Guiana
+  iso: GF
+  zones: [International, South America]
+- name: French Polynesia
+  iso: PF
+  zones: [International, Oceanian]
+- name: Gabon
+  iso: GA
+  zones: [International, Africa]
+- name: Gambia
+  iso: GM
+  zones: [International, Africa]
+- name: Georgia
+  iso: GE
+  zones: [International, Asia]
+- name: Germany
+  iso: DE
+  zones: [International, Europe]
+- name: Ghana
+  iso: GH
+  zones: [International, Africa]
+- name: Gibraltar
+  iso: GI
+  zones: [International, Europe]
+- name: Greece
+  iso: GR
+  zones: [International, Europe]
+- name: Greenland
+  iso: GL
+  zones: [International, North America]
+- name: Grenada
+  iso: GD
+  zones: [International, North America]
+- name: Guadeloupe
+  iso: GP
+  zones: [International, North America]
+- name: Guam
+  iso: GU
+  zones: [International, Oceanian]
+- name: Guatemala
+  iso: GT
+  zones: [International, North America]
+- name: Guinea
+  iso: GN
+  zones: [International, Africa]
+- name: Guinea-Bissau
+  iso: GW
+  zones: [International, Africa]
+- name: Guyana
+  iso: GY
+  zones: [International, South America]
+- name: Haiti
+  iso: HT
+  zones: [International, North America]
+- name: Holy See (Vatican City State)
+  iso: VA
+  zones: [International, Europe]
+- name: Honduras
+  iso: HN
+  zones: [International, North America]
+- name: Hong Kong
+  iso: HK
+  zones: [International, Asia]
+- name: Hungary
+  iso: HU
+  zones: [International, Europe]
+- name: Iceland
+  iso: IS
+  zones: [International, Europe]
+- name: India
+  iso: IN
+  zones: [International, Asia]
+- name: Indonesia
+  iso: ID
+  zones: [International, Asia]
+- name: Iran
+  iso: IR
+  zones: [International, Asia]
+- name: Iraq
+  iso: IQ
+  zones: [International, Asia]
+- name: Ireland
+  iso: IE
+  zones: [International, Europe]
+- name: Israel
+  iso: IL
+  zones: [International, Asia]
+- name: Italy
+  iso: IT
+  zones: [International, Europe]
+- name: Jamaica
+  iso: JM
+  zones: [International, North America]
+- name: Japan
+  iso: JP
+  zones: [International, Asia]
+- name: Jordan
+  iso: JO
+  zones: [International, Asia]
+- name: Kazakhstan
+  iso: KZ
+  zones: [International, Asia]
+- name: Kenya
+  iso: KE
+  zones: [International, Africa]
+- name: Kiribati
+  iso: KI
+  zones: [International, Oceanian]
+- name: Kuwait
+  iso: KW
+  zones: [International, Asia]
+- name: Kyrgyzstan
+  iso: KG
+  zones: [International, Asia]
+- name: Lao People's Democratic Republic
+  iso: LA
+  zones: [International, Asia]
+- name: Latvia
+  iso: LV
+  zones: [International, Europe]
+- name: Lebanon
+  iso: LB
+  zones: [International, Asia]
+- name: Lesotho
+  iso: LS
+  zones: [International, Africa]
+- name: Liberia
+  iso: LR
+  zones: [International, Africa]
+- name: Libyan Arab Jamahiriya
+  iso: LY
+  zones: [International, Africa]
+- name: Liechtenstein
+  iso: LI
+  zones: [International, Europe]
+- name: Lithuania
+  iso: LT
+  zones: [International, Europe]
+- name: Luxembourg
+  iso: LU
+  zones: [International, Europe]
+- name: Macao
+  iso: MO
+  zones: [International, Asia]
+- name: Macedonia
+  iso: MK
+  zones: [International, Europe]
+- name: Madagascar
+  iso: MG
+  zones: [International, Africa]
+- name: Malawi
+  iso: MW
+  zones: [International, Africa]
+- name: Malaysia
+  iso: MY
+  zones: [International, Asia]
+- name: Maldives
+  iso: MV
+  zones: [International, Asia]
+- name: Mali
+  iso: ML
+  zones: [International, Africa]
+- name: Malta
+  iso: MT
+  zones: [International, Europe]
+- name: Marshall Islands
+  iso: MH
+  zones: [International, Oceanian]
+- name: Martinique
+  iso: MQ
+  zones: [International, North America]
+- name: Mauritania
+  iso: MR
+  zones: [International, Africa]
+- name: Mauritius
+  iso: MU
+  zones: [International, Africa]
+- name: Mexico
+  iso: MX
+  zones: [International, North America]
+- name: Micronesia
+  iso: FM
+  zones: [International, Oceanian]
+- name: Moldova
+  iso: MD
+  zones: [International, Europe]
+- name: Monaco
+  iso: MC
+  zones: [International, Europe]
+- name: Mongolia
+  iso: MN
+  zones: [International, Asia]
+- name: Montserrat
+  iso: MS
+  zones: [International, North America]
+- name: Morocco
+  iso: MA
+  zones: [International, Africa]
+- name: Mozambique
+  iso: MZ
+  zones: [International, Africa]
+- name: Myanmar
+  iso: MM
+  zones: [International, Asia]
+- name: Namibia
+  iso: NA
+  zones: [International, Africa]
+- name: Nauru
+  iso: NR
+  zones: [International, Oceanian]
+- name: Nepal
+  iso: NP
+  zones: [International, Asia]
+- name: Netherlands
+  iso: NL
+  zones: [International, Europe]
+- name: Netherlands Antilles
+  iso: AN
+  zones: [International, North America]
+- name: New Caledonia
+  iso: NC
+  zones: [International, Oceanian]
+- name: New Zealand
+  iso: NZ
+  zones: [International, Oceanian]
+- name: Nicaragua
+  iso: NI
+  zones: [International, North America]
+- name: Niger
+  iso: NE
+  zones: [International, Africa]
+- name: Nigeria
+  iso: NG
+  zones: [International, Africa]
+- name: Niue
+  iso: NU
+  zones: [International, Oceanian]
+- name: Norfolk Island
+  iso: NF
+  zones: [International, Oceanian]
+- name: North Korea
+  iso: KP
+  zones: [International, Asia]
+- name: Northern Mariana Islands
+  iso: MP
+  zones: [International, Oceanian]
+- name: Norway
+  iso: 'NO'
+  zones: [International, Europe]
+- name: Oman
+  iso: OM
+  zones: [International, Asia]
+- name: Pakistan
+  iso: PK
+  zones: [International, Asia]
+- name: Palau
+  iso: PW
+  zones: [International, Oceanian]
+- name: Panama
+  iso: PA
+  zones: [International, North America]
+- name: Papua New Guinea
+  iso: PG
+  zones: [International, Oceanian]
+- name: Paraguay
+  iso: PY
+  zones: [International, South America]
+- name: Peru
+  iso: PE
+  zones: [International, South America]
+- name: Philippines
+  iso: PH
+  zones: [International, Asia]
+- name: Pitcairn
+  iso: PN
+  zones: [International, Oceanian]
+- name: Poland
+  iso: PL
+  zones: [International, Europe]
+- name: Portugal
+  iso: PT
+  zones: [International, Europe]
+- name: Puerto Rico
+  iso: PR
+  zones: [International, North America]
+- name: Qatar
+  iso: QA
+  zones: [International, Asia]
+- name: Reunion
+  iso: RE
+  zones: [International, Africa]
+- name: Romania
+  iso: RO
+  zones: [International, Europe]
+- name: Russian Federation
+  iso: RU
+  zones: [International, Asia]
+- name: Rwanda
+  iso: RW
+  zones: [International, Africa]
+- name: Saint Helena
+  iso: SH
+  zones: [International, Africa]
+- name: Saint Kitts and Nevis
+  iso: KN
+  zones: [International, North America]
+- name: Saint Lucia
+  iso: LC
+  zones: [International, North America]
+- name: Saint Pierre and Miquelon
+  iso: PM
+  zones: [International, North America]
+- name: Saint Vincent and the Grenadines
+  iso: VC
+  zones: [International, North America]
+- name: Samoa
+  iso: WS
+  zones: [International, Oceanian]
+- name: San Marino
+  iso: SM
+  zones: [International, Europe]
+- name: Sao Tome and Principe
+  iso: ST
+  zones: [International, Africa]
+- name: Saudi Arabia
+  iso: SA
+  zones: [International, Asia]
+- name: Senegal
+  iso: SN
+  zones: [International, Africa]
+- name: Serbia
+  iso: RS
+  zones: [International, Europe]
+- name: Seychelles
+  iso: SC
+  zones: [International, Africa]
+- name: Sierra Leone
+  iso: SL
+  zones: [International, Africa]
+- name: Singapore
+  iso: SG
+  zones: [International, Asia]
+- name: Slovakia
+  iso: SK
+  zones: [International, Europe]
+- name: Slovenia
+  iso: SI
+  zones: [International, Europe]
+- name: Solomon Islands
+  iso: SB
+  zones: [International, Oceanian]
+- name: Somalia
+  iso: SO
+  zones: [International, Africa]
+- name: South Africa
+  iso: ZA
+  zones: [International, Africa]
+- name: South Korea
+  iso: KR
+  zones: [International, Asia]
+- name: Spain
+  iso: ES
+  zones: [International, Europe]
+- name: Sri Lanka
+  iso: LK
+  zones: [International, Asia]
+- name: Sudan
+  iso: SD
+  zones: [International, Africa]
+- name: Suriname
+  iso: SR
+  zones: [International, South America]
+- name: Svalbard and Jan Mayen
+  iso: SJ
+  zones: [International, Europe]
+- name: Swaziland
+  iso: SZ
+  zones: [International, Africa]
+- name: Sweden
+  iso: SE
+  zones: [International, Europe]
+- name: Switzerland
+  iso: CH
+  zones: [International, Europe]
+- name: Syrian Arab Republic
+  iso: SY
+  zones: [International, Asia]
+- name: Taiwan
+  iso: TW
+  zones: [International, Asia]
+- name: Tajikistan
+  iso: TJ
+  zones: [International, Asia]
+- name: Tanzania
+  iso: TZ
+  zones: [International, Africa]
+- name: Thailand
+  iso: TH
+  zones: [International, Asia]
+- name: Togo
+  iso: TG
+  zones: [International, Africa]
+- name: Tokelau
+  iso: TK
+  zones: [International, Oceanian]
+- name: Tonga
+  iso: TO
+  zones: [International, Oceanian]
+- name: Trinidad and Tobago
+  iso: TT
+  zones: [International, North America]
+- name: Tunisia
+  iso: TN
+  zones: [International, Africa]
+- name: Turkey
+  iso: TR
+  zones: [International, Asia]
+- name: Turkmenistan
+  iso: TM
+  zones: [International, Asia]
+- name: Turks and Caicos Islands
+  iso: TC
+  zones: [International, North America]
+- name: Tuvalu
+  iso: TV
+  zones: [International, Oceanian]
+- name: Uganda
+  iso: UG
+  zones: [International, Africa]
+- name: Ukraine
+  iso: UA
+  zones: [International, Europe]
+- name: United Arab Emirates
+  iso: AE
+  zones: [International, Asia]
+- name: United Kingdom
+  iso: GB
+  zones: [Domestic, Europe]
+- name: United States
+  iso: US
+  zones: [International, North America]
+- name: Uruguay
+  iso: UY
+  zones: [International, South America]
+- name: Uzbekistan
+  iso: UZ
+  zones: [International, Asia]
+- name: Vanuatu
+  iso: VU
+  zones: [International, Oceanian]
+- name: Venezuela
+  iso: VE
+  zones: [International, South America]
+- name: Vietnam
+  iso: VN
+  zones: [International, Asia]
+- name: Virgin Islands
+  iso: VG
+  zones: [International, North America]
+- name: Virgin Islands
+  iso: VI
+  zones: [International, North America]
+- name: Wallis and Futuna
+  iso: WF
+  zones: [International, Oceanian]
+- name: Western Sahara
+  iso: EH
+  zones: [International, Africa]
+- name: Yemen
+  iso: YE
+  zones: [International, Asia]
+- name: Zambia
+  iso: ZM
+  zones: [International, Africa]
+- name: Zimbabwe
+  iso: ZW
+  zones: [International, Africa]

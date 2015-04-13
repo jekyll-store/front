@@ -1,0 +1,6 @@
+---
+layout: compress
+permalink: /delivery-methods.json
+---
+
+{{ site.data.delivery-methods | replace: '=>', ':' }}

@@ -1,0 +1,31 @@
+title: Jekyll-Store
+description: 'ToDo: write description'
+baseurl: ''
+sass:
+  sass_dir: /assets/_sass
+  style: :compressed
+collections:
+  products:
+    output: true
+    permalink: /:path/
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'products'
+    values:
+      layout: 'product'
+exclude: ['Gemfile', 'Gemfile.lock']
+defaultAddress:
+  country: GB
+payment:
+  tokenizer: Paymill
+  currency: GBP
+  hook: 'http://127.0.0.1:4567/purchase'
+accounting:
+  symbol : '£'
+  format: '%s%v'
+  decimal : '.'
+  thousand: ','
+  precision : 2
+paymillPublicKey: 323027826220f6ed944b96a1a47e35a0

@@ -1,0 +1,14 @@
+#thankyou {
+  margin: 3em 2em 0;
+  font-size: 1.5em;
+  text-align: center;
+
+  p, .title { padding: 0.5em; }
+  img { padding: 0 2em; }
+
+	@include media($large-screen) {
+  	margin: 10em 2em;
+		text-align: left;
+		img { float: left; width: 30%; }
+	}
+}

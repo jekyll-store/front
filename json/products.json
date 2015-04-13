@@ -1,0 +1,9 @@
+---
+layout: compress
+permalink: /products.json
+---
+
+[{% for product in site.products %}
+{{ product | strip_html | replace: '\n', '' | replace: '=>', ':' }}
+{% if forloop.last %}{% else %},{% endif %}
+{% endfor %}]

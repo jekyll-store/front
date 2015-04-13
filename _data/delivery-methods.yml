@@ -1,0 +1,20 @@
+- name: Royal Mail 48
+  zones: [Domestic]
+  eta: 2-3 working days
+  calculator: Tiered
+  args:
+    field: weight
+    tiers: [[0,  5.48], [5,  9.95], [10,  14.68], [15]]
+- name: Royal Mail 24
+  zones: [Domestic]
+  eta: 1 working day
+  calculator: Tiered
+  args:
+    field: weight
+    tiers: [[0, 8.35], [5, 12.13], [10, 20.34], [15, 18.94]]
+- name: International Standard
+  zones: [International]
+  eta: 4-5 working days
+  calculator: Fixed
+  args:
+    amount: 25.00
