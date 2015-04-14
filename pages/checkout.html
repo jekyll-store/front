@@ -64,7 +64,5 @@ permalink: /checkout/
     delete form.card.expiry;
   }
 
-  JSE.Actions.completed.listen(function() {
-    window.location.href = "{{ '/thankyou' | prepend: site.baseurl }}";
-  });
+  JSE.Actions.completed.listen(function() { window.location.href = '/thankyou'; });
 </script>

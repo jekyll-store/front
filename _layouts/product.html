@@ -29,7 +29,5 @@ layout: default
   	document.getElementById('addToBasket')
   );
 
-  JSE.Stores.Basket.listen(function() {
-  	window.location.href = "{{ '/basket' | prepend: site.baseurl }}";
-  });
+  JSE.Stores.Basket.listen(function() {	window.location.href = '/basket'; });
 </script>

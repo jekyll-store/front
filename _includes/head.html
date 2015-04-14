@@ -6,10 +6,8 @@
 
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
-  <link href='{{ '/assets/app.css' | prepend: site.baseurl }}' rel='stylesheet' type='text/css'>
-  <link href='{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}' rel='canonical'>
-  <script src='{{ '/assets/app.js' | prepend: site.baseurl }}'></script>
-  <script
-    type='text/jsx'
-    src='{{ '/assets/components.jsx' | prepend: site.baseurl }}'></script>
+  <link href='/assets/app.css' rel='stylesheet' type='text/css'>
+  <link href='{{ page.url | replace:'index.html', '' | prepend: site.url }}' rel='canonical'>
+  <script src='/assets/app.js'></script>
+  <script type='text/jsx'src='/assets/components.jsx'></script>
 </head>

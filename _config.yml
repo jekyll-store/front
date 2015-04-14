@@ -1,6 +1,5 @@
 title: Jekyll-Store
 description: 'ToDo: write description'
-baseurl: ''
 sass:
   sass_dir: /assets/_sass
   style: :compressed
