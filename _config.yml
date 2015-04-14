@@ -21,7 +21,7 @@ defaultAddress:
 payment:
   tokenizer: Paymill
   currency: GBP
-  hook: 'http://jekyll-store-microservice.herokuapp.com/purchase'
+  hook: 'https://jekyll-store-microservice.herokuapp.com/purchase'
 accounting:
   symbol : '£'
   format: '%s%v'
