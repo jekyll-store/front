@@ -26,4 +26,3 @@ Reflux = JSE.Vendor.Reflux;
 {% include_relative _js/components/DeliverySelect.jsx %}
 {% include_relative _js/components/Card.jsx %}
 {% include_relative _js/components/OrderSummary.jsx %}
-{% include_relative _js/components/Receipt.jsx %}

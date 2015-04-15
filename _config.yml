@@ -1,45 +1,39 @@
 title: Jekyll-Store
-description: 'ToDo: write description'
-sass:
-  sass_dir: /assets/_sass
-  style: :compressed
-collections:
-  products:
-    output: true
-    permalink: /:path/
-defaults:
-  -
-    scope:
-      path: ''
-      type: 'products'
-    values:
-      layout: 'product'
-exclude: ['Gemfile', 'Gemfile.lock']
+description: 'A lightweight, backend-free ecommerce solution.'
+
+# Jekyll-Store Engine
 defaultAddress:
   country: GB
 payment:
   tokenizer: Paymill
   currency: GBP
   hook: 'https://jekyll-store-microservice.herokuapp.com/purchase'
+
+# Jekll-Store Front
+image_prefix: 'http://res.cloudinary.com/jekyll-store/'
+paymillPublicKey: 323027826220f6ed944b96a1a47e35a0
+
+# http://openexchangerates.github.io/accounting.js/#documentation
 accounting:
   symbol : '£'
   format: '%s%v'
   decimal : '.'
   thousand: ','
   precision : 2
-paymillPublicKey: 323027826220f6ed944b96a1a47e35a0
-image_prefix: 'http://res.cloudinary.com/jekyll-store/'
+
+# https://github.com/prose/prose/wiki/Prose-Configuration
 prose:
   ignore:
-    - /_includes
-    - /_layouts
-    - /assets
-    - /json
-    - /pages
-    - /.gitignore
-    - /_config.yml
-    - /CNAME
-    - /Gemfile
+    - _includes
+    - _layouts
+    - assets
+    - json
+    - pages
+    - .gitignore
+    - _config.yml
+    - CNAME
+    - Gemfile
+    - README.md
   metadata:
     _products:
       - name: name
@@ -83,3 +77,20 @@ prose:
         field:
           element: text
           label: Image 2
+
+# http://jekyllrb.com/docs/configuration/
+sass:
+  sass_dir: /assets/_sass
+  style: :compressed
+collections:
+  products:
+    output: true
+    permalink: /:path/
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'products'
+    values:
+      layout: 'product'
+exclude: ['Gemfile', 'Gemfile.lock', 'README.md', 'CNAME']
