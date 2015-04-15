@@ -28,6 +28,7 @@ accounting:
   thousand: ','
   precision : 2
 paymillPublicKey: 323027826220f6ed944b96a1a47e35a0
+image_prefix: 'http://res.cloudinary.com/jekyll-store/'
 prose:
   ignore:
     - /_includes

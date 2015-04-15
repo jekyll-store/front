@@ -5,8 +5,8 @@ weight: 2.97
 designer: John Bell
 type: Metallic
 condition: Rough
-image1: '/assets/images/small/mattel.jpg'
-image2: '/assets/images/big/mattel.jpg'
+image1: 'mattel-small.jpg'
+image2: 'mattel-big.jpg'
 ---
 
 Phasellus suscipit sem eu lacinia facilisis. Nullam eu enim viverra, pharetra nisi in, rhoncus lorem. Etiam efficitur ante vitae purus tincidunt, in pellentesque ex congue. Donec eget mi nec libero mollis faucibus sodales nec lectus. In pellentesque lorem non orci tempus, id scelerisque orci tempor. Curabitur vitae dolor sem.
