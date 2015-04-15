@@ -16,7 +16,7 @@ BasketItem = React.createClass({
         <td>
           <a href={item.url}>
           <h1>{item.name}</h1>
-          <img src={item.images[0]} alt={item.name} />
+          <img src={item.image1} alt={item.name} />
           </a>
         </td>
         <td>{money(item.price)}</td>

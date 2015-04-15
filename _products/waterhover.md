@@ -5,9 +5,8 @@ weight: 2.53
 designer: JHåland
 type: Metallic
 condition: Worn
-images:
-  - '/assets/images/small/waterhover.jpg'
-  - '/assets/images/big/waterhover.jpg'
+image1: '/assets/images/small/waterhover.jpg'
+image2: '/assets/images/big/waterhover.jpg'
 ---
 
 Etiam dapibus condimentum lorem, id fermentum erat rutrum eu. Aenean justo ipsum, luctus at felis id, tincidunt sollicitudin risus. Nullam sagittis, augue non fermentum tristique, diam eros vehicula velit, vitae vehicula ante elit varius eros. Curabitur ut dolor at mauris condimentum feugiat non a nisi. Mauris luctus augue vel massa accumsan volutpat. Vestibulum in dolor eget dui lacinia lacinia.

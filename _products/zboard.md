@@ -5,9 +5,8 @@ weight: 3.98
 designer: Annette Sandøy Kristiansen
 type: Wood
 condition: Rough
-images:
-  - '/assets/images/small/zboard.jpg'
-  - '/assets/images/big/zboard.jpg'
+image1: '/assets/images/small/zboard.jpg'
+image2: '/assets/images/big/zboard.jpg'
 ---
 
 Maecenas vel tellus sed leo rhoncus faucibus eget ut tortor. Aliquam a dolor ac tellus vestibulum tempor. Cras faucibus risus id mattis auctor. Nunc porta nunc sit amet felis posuere, sit amet varius diam fringilla. Nunc a ipsum iaculis velit viverra condimentum vel non neque. Maecenas eget feugiat enim.

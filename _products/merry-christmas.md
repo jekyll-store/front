@@ -5,9 +5,8 @@ weight: 4.03
 designer: JHåland
 type: Wood
 condition: Worn
-images:
-  - '/assets/images/small/merry-christmas.jpg'
-  - '/assets/images/big/merry-christmas.jpg'
+image1: '/assets/images/small/merry-christmas.jpg'
+image2: '/assets/images/big/merry-christmas.jpg'
 ---
 
 Praesent in mollis purus, eu tristique ligula. Vivamus viverra nulla non sapien facilisis tempor. Ut condimentum pulvinar quam, eget tristique lectus luctus sed. Nullam pharetra dui sem, sed efficitur ligula tincidunt ut. Sed quam tellus, porta ut lectus nec, accumsan tempor ex. Duis vitae interdum arcu, ut sodales ante. In diam metus, pellentesque ut urna in, sodales iaculis tellus.

@@ -28,3 +28,57 @@ accounting:
   thousand: ','
   precision : 2
 paymillPublicKey: 323027826220f6ed944b96a1a47e35a0
+prose:
+  ignore:
+    - /_includes
+    - /_layouts
+    - /assets
+    - /json
+    - /pages
+    - /.gitignore
+    - /_config.yml
+    - /CNAME
+    - /Gemfile
+  metadata:
+    _products:
+      - name: name
+        field:
+          element: text
+          label: Name
+          help: Must be unique
+      - name: price
+        field:
+          element: number
+          label: 'Price (£)'
+      - name: weight
+        field:
+          element: number
+          label: 'Weight (kg)'
+      - name: designer
+        field:
+          element: text
+          label: Designer
+      - name: type
+        field:
+          element: select
+          label: Type
+          options:
+            - value: Wood
+            - value: Metal
+            - value: Metallic
+      - name: condition
+        field:
+          element: select
+          label: Condition
+          options:
+            - value: Mint
+            - value: Worn
+            - value: Rough
+      - name: image1
+        field:
+          element: text
+          label: Image 1
+      - name: image2
+        field:
+          element: text
+          label: Image 2

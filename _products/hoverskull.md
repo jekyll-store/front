@@ -5,9 +5,8 @@ weight: 3.24
 designer: Jonas Bødtker
 type: Metallic
 condition: Worn
-images:
-  - '/assets/images/small/hoverskull.jpg'
-  - '/assets/images/big/hoverskull.jpg'
+image1: '/assets/images/small/hoverskull.jpg'
+image2: '/assets/images/big/hoverskull.jpg'
 ---
 
 Nam eget leo vitae lectus pulvinar accumsan. Aliquam efficitur vel erat in mollis. Phasellus cursus ligula nec lectus pharetra, vel tristique sapien facilisis. Etiam condimentum condimentum sapien in hendrerit.
