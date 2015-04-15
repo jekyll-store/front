@@ -3,6 +3,7 @@
 
 // Vendor
 {% include_relative _js/vendor/JSXTransformer-0.13.1.js %}
+{% include_relative _js/vendor/react.min.js %}
 {% include_relative _js/vendor/paymillBridge.js %}
 {% include_relative _js/vendor/webforms2-p.js %}
 {% include_relative _js/vendor/form2js.js %}
