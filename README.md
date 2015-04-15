@@ -50,6 +50,10 @@ Each delivery method must have a calculator that is the name of a valid [Jekll-S
 * Percent
 * Tiered
 
+## Reset Hook
+
+To keep your [Microservice](https://github.com/jekyll-store/microservice) instance (or similar) up to date. Make sure to create a [github webhook](https://developer.github.com/webhooks/creating/) on your repository with it's reset url.
+
 ## JSX Transformer
 
 The [React](https://github.com/facebook/react) components can be found in `/assets/_js/components` and are collated into the `assets/components.jsx` file. This file is then transpiled into javascript live in browser using Facebook's JSX Transformer. This allows for easy development as components can be edited just like any other file. However for production, if you want to improve performance, it is advised to transpile offline using [react-tools](https://www.npmjs.com/package/react-tools).
