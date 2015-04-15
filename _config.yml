@@ -69,14 +69,14 @@ prose:
             - value: Mint
             - value: Worn
             - value: Rough
-      - name: image1
+      - name: image
         field:
           element: text
-          label: Image 1
-      - name: image2
+          label: Image
+      - name: big_image
         field:
           element: text
-          label: Image 2
+          label: Big Image
 
 # http://jekyllrb.com/docs/configuration/
 sass:

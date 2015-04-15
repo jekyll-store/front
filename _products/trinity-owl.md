@@ -5,8 +5,8 @@ weight: 4.26
 designer: Håvar Legreid
 type: Wood
 condition: Worn
-image1: 'trinity-owl-small.jpg'
-image2: 'trinity-owl-big.jpg'
+image: 'trinity-owl-small.jpg'
+big_image: 'trinity-owl-big.jpg'
 ---
 
 Quisque gravida, libero quis pharetra fermentum, velit elit sollicitudin elit, quis tempor justo sem a tortor. Quisque lacinia magna in est accumsan mollis. Pellentesque vulputate tristique congue. Mauris posuere interdum leo, vel vestibulum lacus elementum at. Cras nec dictum dolor. Phasellus eleifend pellentesque nisl vel auctor. Fusce sagittis massa eget iaculis sollicitudin.

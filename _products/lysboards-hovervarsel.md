@@ -5,8 +5,8 @@ weight: 4.15
 designer: Jacob Lysgaard
 type: Wood
 condition: Rough
-image1: 'lysboards-hovervarsel-small.jpg'
-image2: 'lysboards-hovervarsel-big.jpg'
+image: 'lysboards-hovervarsel-small.jpg'
+big_image: 'lysboards-hovervarsel-big.jpg'
 ---
 
 Phasellus suscipit sem eu lacinia facilisis. Nullam eu enim viverra, pharetra nisi in, rhoncus lorem. Etiam efficitur ante vitae purus tincidunt, in pellentesque ex congue. Donec eget mi nec libero mollis faucibus sodales nec lectus. In pellentesque lorem non orci tempus, id scelerisque orci tempor. Curabitur vitae dolor sem.

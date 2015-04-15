@@ -3,7 +3,7 @@ layout: default
 ---
 <main id='product'>
 	<aside>
-    <img src='{{ site.image_prefix }}{{ page.image1 }}' alt='{{ page.name }}' />
+    <img src='{{ site.image_prefix }}{{ page.image }}' alt='{{ page.name }}' />
 		<table>
 			<tr> <th> Type      </th> <td> {{ page.type }}      </td> </tr>
 			<tr> <th> Condition </th> <td> {{ page.condition }} </td> </tr>
@@ -18,7 +18,7 @@ layout: default
 		<div id='addToBasket'></div>
 		<section>
 			<p>{{ content }}</p>
-      <img src='{{ site.image_prefix }}{{ page.image2 }}' alt='{{ page.name }}' />
+      <img src='{{ site.image_prefix }}{{ page.big_image }}' alt='{{ page.name }}' />
 		</section>
 	</article>
 </main>

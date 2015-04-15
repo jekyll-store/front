@@ -4,7 +4,7 @@ DisplayItem = React.createClass({
     return (
       <li>
         <a href={product.url}>
-          <img src={'{{ site.image_prefix }}' + product.image1} alt={product.name} />
+          <img src={'{{ site.image_prefix }}' + product.image} alt={product.name} />
           <span className='name'>{product.name}</span>
           <span className='price'>{money(product.price)}</span>
         </a>
