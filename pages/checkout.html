@@ -6,7 +6,7 @@ permalink: /checkout/
 <main id='checkout'>
   <h1 class='title'>Checkout</h1>
   <div id='errors'></div>
-  <form onsubmit='submitPurchase(this)' id='checkoutForm'>
+  <form onsubmit='submitPurchase(event)' id='checkoutForm'>
     <section>
       <fieldset>
         <input type='text' name='address.name' placeholder='Name' required />
@@ -49,8 +49,10 @@ permalink: /checkout/
   React.render(<Card />,            document.getElementById('card'));
   React.render(<OrderSummary />,    document.getElementById('order-summary'));
 
-  function submitPurchase(form) {
-    event.preventDefault();
+  var form = document.getElementById('checkoutForm');
+
+  function submitPurchase(event) {
+    event.preventDefault ? event.preventDefault() : event.returnValue = false;
     showSpinner();
 
     form = form2js(form);
@@ -68,12 +70,12 @@ permalink: /checkout/
 
   var spinner;
   function showSpinner() {
-    document.getElementById('checkoutForm').className = 'hide';
+    form.className = 'hide';
     spinner = new Spinner().spin(document.getElementById('checkout'));
   }
 
   function hideSpinner() {
-    document.getElementById('checkoutForm').className = '';
+    form.className = '';
     spinner && spinner.stop();
   }
 
