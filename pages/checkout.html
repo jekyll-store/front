@@ -6,7 +6,7 @@ permalink: /checkout/
 <main id='checkout'>
   <h1 class='title'>Checkout</h1>
   <div id='errors'></div>
-  <form onsubmit='submitPurchase(this)'>
+  <form onsubmit='submitPurchase(this)' id='checkoutForm'>
     <section>
       <fieldset>
         <input type='text' name='address.name' placeholder='Name' required />
@@ -51,6 +51,8 @@ permalink: /checkout/
 
   function submitPurchase(form) {
     event.preventDefault();
+    showSpinner();
+
     form = form2js(form);
     splitExpiry(form);
     form.card.number = form.card.number.replace(/ /g, '');
@@ -64,5 +66,17 @@ permalink: /checkout/
     delete form.card.expiry;
   }
 
+  var spinner;
+  function showSpinner() {
+    document.getElementById('checkoutForm').className = 'hide';
+    spinner = new Spinner().spin(document.getElementById('checkout'));
+  }
+
+  function hideSpinner() {
+    document.getElementById('checkoutForm').className = '';
+    spinner && spinner.stop();
+  }
+
+  JSE.Stores.Order.listen(hideSpinner);
   JSE.Actions.completed.listen(function() { window.location.href = '/thankyou'; });
 </script>
