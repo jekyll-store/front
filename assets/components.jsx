@@ -1,7 +1,6 @@
 ---
 ---
 
-// Components
 Reflux = JSE.Vendor.Reflux;
 {% include_relative _js/components/BasketSummary.jsx %}
 

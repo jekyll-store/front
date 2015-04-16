@@ -90,7 +90,12 @@ defaults:
   -
     scope:
       path: ''
-      type: 'products'
+      type: products
     values:
-      layout: 'product'
-exclude: ['Gemfile', 'Gemfile.lock', 'README.md', 'CNAME']
+      layout: product
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - CNAME
+  - VERSION

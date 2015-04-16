@@ -12,4 +12,3 @@ Errors = React.createClass({
       </div>;
   }
 });
-

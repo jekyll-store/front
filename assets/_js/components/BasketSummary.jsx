@@ -10,4 +10,3 @@ BasketSummary = React.createClass({
       null
   }
 });
-
