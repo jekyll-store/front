@@ -26,3 +26,4 @@ window.renderComponent = require('./helpers/renderComponent');
 window.toggle = require('./helpers/toggle');
 window.serializeAndPurchase = require('./helpers/serializeAndPurchase');
 window.spinner = require('./helpers/spinner');
+window.loadJSON = require('./helpers/loadJSON');

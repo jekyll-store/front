@@ -10,7 +10,7 @@ JSE.Actions.setAddress({{ site.defaultAddress | replace: '=>', ':' }});
 JSE.Actions.setPaymentOptions({{ site.payment | replace: '=>', ':' }});
 
 // Data
-JSE.Utils.loadJSON('/products.json', function(products){
+loadJSON('/products.json', function(products){
   JSE.Actions.loadProducts({ products: products });
 });
 
