@@ -7,7 +7,7 @@
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
   <link href='/assets/app.css' rel='stylesheet' type='text/css'>
-  <link href='{{ page.url | replace:'index.html', '' | prepend: site.url }}' rel='canonical'>
+  <link href='{{ page.url | replace:'index.html', '' | prepend: site.url }}'
+        rel='canonical'>
   <script src='/assets/app.js'></script>
-  <script type='text/jsx'src='/assets/components.jsx'></script>
 </head>

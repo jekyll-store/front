@@ -1,4 +1,7 @@
-AddToBasket = React.createClass({
+var React = require('react');
+var JSE = require('JekyllStoreEngine');
+
+var AddToBasket = React.createClass({
   getInitialState: function() { return { quantity: 1 }; },
   setQuantity: function(e) { this.setState({ quantity: e.target.value }); },
   add: function() {
@@ -18,3 +21,5 @@ AddToBasket = React.createClass({
     );
   }
 });
+
+module.exports = AddToBasket;

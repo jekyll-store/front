@@ -1,9 +1,14 @@
-Display = React.createClass({
+var React = require('react');
+var Reflux = require('reflux');
+var JSE = require('JekyllStoreEngine');
+var DisplayItem = require('./DisplayItem.jsx');
+
+var Display = React.createClass({
   mixins: [Reflux.connect(JSE.Stores.Display)],
   render: function() {
     var products = this.state.display.get('products');
     return (
-      <article className='display'>
+      <div>
         { products.isEmpty() ?
           <h1 className='no-products'>No Products Found</h1> :
           <ul>
@@ -14,7 +19,9 @@ Display = React.createClass({
             }
           </ul>
         }
-      </article>
+      </div>
     );
   }
 });
+
+module.exports = Display;

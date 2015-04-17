@@ -1,4 +1,10 @@
-Basket = React.createClass({
+var React = require('react');
+var Reflux = require('reflux');
+var JSE = require('JekyllStoreEngine');
+var BasketItem = require('./BasketItem.jsx');
+var money = require('../helpers/money');
+
+var Basket = React.createClass({
   mixins: [Reflux.connect(JSE.Stores.Order), Reflux.connect(JSE.Stores.Basket)],
   render: function() {
     return (
@@ -33,3 +39,5 @@ Basket = React.createClass({
     );
   }
 });
+
+module.exports = Basket;

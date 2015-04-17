@@ -1,4 +1,7 @@
-SortButtonGroup = React.createClass({
+var React = require('react');
+var JSE = require('JekyllStoreEngine');
+
+var SortButtonGroup = React.createClass({
   getInitialState: function() { return { selected: null, direction: null }; },
 
   ASC: JSE.Filters.Sort.ASC,
@@ -56,3 +59,5 @@ SortButtonGroup = React.createClass({
     );
   }
 });
+
+module.exports = SortButtonGroup;

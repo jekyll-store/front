@@ -1,4 +1,7 @@
-DisplayItem = React.createClass({
+var React = require('react');
+var money = require('../helpers/money');
+
+var DisplayItem = React.createClass({
   render: function() {
     var product = this.props.product.toJS();
     return (
@@ -12,3 +15,5 @@ DisplayItem = React.createClass({
     );
   }
 });
+
+module.exports = DisplayItem;

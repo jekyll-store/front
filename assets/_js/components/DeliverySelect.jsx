@@ -1,4 +1,9 @@
-DeliverySelect = React.createClass({
+var React = require('react');
+var Reflux = require('reflux');
+var JSE = require('JekyllStoreEngine');
+var money = require('../helpers/money');
+
+var DeliverySelect = React.createClass({
   mixins: [
     Reflux.connect(JSE.Stores.DeliveryMethods),
     Reflux.connect(JSE.Stores.Delivery)
@@ -32,3 +37,5 @@ DeliverySelect = React.createClass({
     );
   }
 });
+
+module.exports = DeliverySelect;

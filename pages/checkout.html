@@ -6,7 +6,7 @@ permalink: /checkout/
 <main id='checkout'>
   <h1 class='title'>Checkout</h1>
   <div id='errors'></div>
-  <form onsubmit='submitPurchase(event)' id='checkoutForm'>
+  <form onsubmit='submitPurchase(event, this)' id='checkoutForm'>
     <section>
       <fieldset>
         <input type='text' name='address.name' placeholder='Name' required />
@@ -42,43 +42,25 @@ permalink: /checkout/
   </form>
 </main>
 
-<script type='text/jsx'>
-  React.render(<Errors />,          document.getElementById('errors'));
-  React.render(<CountriesSelect />, document.getElementById('countries'));
-  React.render(<DeliverySelect />,  document.getElementById('delivery'));
-  React.render(<Card />,            document.getElementById('card'));
-  React.render(<OrderSummary />,    document.getElementById('order-summary'));
+<script>
+  renderComponent('errors', Errors);
+  renderComponent('countries', CountriesSelect);
+  renderComponent('delivery', DeliverySelect);
+  renderComponent('card', Card);
+  renderComponent('order-summary', OrderSummary);
 
-  var form = document.getElementById('checkoutForm');
-
-  function submitPurchase(event) {
+  function submitPurchase(event, form) {
     event.preventDefault ? event.preventDefault() : event.returnValue = false;
-    showSpinner();
-
-    form = form2js(form);
-    splitExpiry(form);
-    form.card.number = form.card.number.replace(/ /g, '');
-    JSE.Actions.purchase(form);
-  }
-
-  function splitExpiry(form) {
-    var expiry = form.card.expiry.split(' / ');
-    form.card.month = expiry[0];
-    form.card.year = expiry[1];
-    delete form.card.expiry;
-  }
-
-  var spinner;
-  function showSpinner() {
+    spinner.show('checkout');
     form.className = 'hide';
-    spinner = new Spinner().spin(document.getElementById('checkout'));
+    serializeAndPurchase(form);
   }
 
-  function hideSpinner() {
-    form.className = '';
-    spinner && spinner.stop();
-  }
+  JSE.Stores.Order.listen(function() {
+    // Order has errors
+    spinner.hide();
+    document.getElementById('checkoutForm').className = '';
+  });
 
-  JSE.Stores.Order.listen(hideSpinner);
   JSE.Actions.completed.listen(function() { window.location.href = '/thankyou'; });
 </script>

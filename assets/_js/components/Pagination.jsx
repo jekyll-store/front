@@ -1,4 +1,8 @@
-Pagination = React.createClass({
+var React = require('react');
+var Reflux = require('reflux');
+var JSE = require('JekyllStoreEngine');
+
+var Pagination = React.createClass({
   mixins: [Reflux.listenTo(JSE.Stores.Display, 'onChange')],
   onChange: function(args) {
     var page = args.display.get('page');
@@ -23,7 +27,7 @@ Pagination = React.createClass({
   render: function() {
     var nope = 'javascript:void(0)';
     return (
-      <div className='pagination'>
+      <div>
         <ul>
           <li>
             {this.state.prev ? <a href={nope} onClick={this.prev}>Prev</a> : null}
@@ -50,3 +54,5 @@ Pagination = React.createClass({
     );
   }
 });
+
+module.exports = Pagination;

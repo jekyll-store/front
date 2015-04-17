@@ -1,4 +1,7 @@
-RangesButtonGroup = React.createClass({
+var React = require('react');
+var JSE = require('JekyllStoreEngine');
+
+var RangesButtonGroup = React.createClass({
   getInitialState: function() { return { selected: [] }; },
 
   select: function(i) {
@@ -48,3 +51,5 @@ RangesButtonGroup = React.createClass({
     );
   }
 });
+
+module.exports = RangesButtonGroup;

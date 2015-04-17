@@ -1,4 +1,8 @@
-BasketItem = React.createClass({
+var React = require('react');
+var JSE = require('JekyllStoreEngine');
+var money = require('../helpers/money');
+
+var BasketItem = React.createClass({
   set: function(e) {
     JSE.Actions.setItem({
       name: this.name(),
@@ -22,8 +26,10 @@ BasketItem = React.createClass({
         <td>{money(item.price)}</td>
         <td><input type='number' value={item.quantity} onChange={this.set} /></td>
         <td>{money(item.price.times(item.quantity))}</td>
-        <td><a href='javascript:void(0)' onClick={this.remove}>x</a></td>
+        <td onClick={this.remove}>x</td>
       </tr>
     );
   }
 });
+
+module.exports = BasketItem;

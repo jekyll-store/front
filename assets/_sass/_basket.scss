@@ -7,15 +7,13 @@
 
 	td:last-child, th:last-child {
   	width: 10px;
+		color: #868282;
+	  position: relative;
+	  left: -25px;
+	  font-size: 1.3em;
+	  cursor: pointer;
 
-  	a {
-			color: #868282;
-		  position: relative;
-		  left: -25px;
-		  font-size: 1.3em;
-
-		  &:hover { color: #333 };
-  	}
+	  &:hover { color: #333 };
 	}
 }
 

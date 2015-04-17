@@ -1,11 +1,11 @@
-<header class='centered-navigation' role='banner'>
-  <div class='centered-navigation-wrapper'>
-    <a href='/' class='mobile-logo'>
+<header id='nav' role='banner'>
+  <div id='nav-wrapper'>
+    <a href='/' id='mobile-logo'>
       <img src='/assets/images/logo.png' alt='Logo'>
     </a>
-    <a href='javascript:void(0)' id='js-centered-navigation-mobile-menu' class='centered-navigation-mobile-menu' onclick='toggle()'>MENU</a>
+    <i id='nav-mobile-menu' onclick='toggle("nav-menu", "show")'>MENU</i>
     <nav role='navigation'>
-      <ul id='js-centered-navigation-menu' class='centered-navigation-menu'>
+      <ul id='nav-menu'>
         <li class='nav-link logo'>
           <a href='/' class='logo'>
             <img src='/assets/images/logo.png' alt='Logo'>
@@ -24,22 +24,9 @@
   </div>
 </header>
 
-<script type='text/jsx'>
-  React.render(
-    <BasketSummary img='/assets/images/cart.png' link='/basket' />,
-    document.getElementById('basket-summary')
-  );
-
-  var toggle;
-
-  (function() {
-    var menuShow = false;
-    var menu = document.getElementById('js-centered-navigation-menu');
-    var menuClass = menu.className;
-
-    toggle = function() {
-      menuShow = !menuShow;
-      menu.className = menuClass + (menuShow ? ' show' : '');
-    }
-  })();
+<script>
+  renderComponent('basket-summary', BasketSummary, {
+    img: '/assets/images/cart.png',
+    link: '/basket'
+  });
 </script>

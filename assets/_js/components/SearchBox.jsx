@@ -1,4 +1,7 @@
-SearchBox = React.createClass({
+var React = require('react');
+var JSE = require('JekyllStoreEngine');
+
+var SearchBox = React.createClass({
   update: function(e) {
     var txt = e.target.value;
     if(txt) {
@@ -14,3 +17,5 @@ SearchBox = React.createClass({
     );
   }
 });
+
+module.exports = SearchBox;

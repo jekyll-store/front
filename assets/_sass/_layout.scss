@@ -1,10 +1,5 @@
 main { @include outer-container; }
 
-.centered-navigation {
-  background-color: #CDE0F5;
-  border-bottom: 1px solid #B1D1F4;
-}
-
 li.nav-link.logo {
   font-size: 1.4em;
 }
@@ -28,3 +23,4 @@ img#cart {
 .flash {  margin: 0.5em 0; }
 
 .hide { display: none; }
+.show { display: block !important; }

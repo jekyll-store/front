@@ -1,4 +1,7 @@
-Card = React.createClass({
+var React = require('react');
+var JSE = require('JekyllStoreEngine');
+
+var Card = React.createClass({
   getInitialState: function() {
     return { number: '', expiry: '', cvc: '' };
   },
@@ -45,3 +48,5 @@ Card = React.createClass({
     );
   }
 });
+
+module.exports = Card;

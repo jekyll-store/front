@@ -28,11 +28,13 @@ prose:
     - _layouts
     - assets
     - json
+    - node_modules
     - pages
     - .gitignore
     - _config.yml
     - CNAME
     - Gemfile
+    - package.json
     - README.md
   metadata:
     _products:
@@ -94,8 +96,9 @@ defaults:
     values:
       layout: product
 exclude:
+  - node_modules
   - Gemfile
   - Gemfile.lock
   - README.md
   - CNAME
-  - VERSION
+  - package.json

@@ -1,4 +1,8 @@
-Errors = React.createClass({
+var React = require('react');
+var Reflux = require('reflux');
+var JSE = require('JekyllStoreEngine');
+
+var Errors = React.createClass({
   mixins: [Reflux.connect(JSE.Stores.Order)],
   render: function() {
   	var errors = this.state.order.get('errors');
@@ -12,3 +16,5 @@ Errors = React.createClass({
       </div>;
   }
 });
+
+module.exports = Errors;

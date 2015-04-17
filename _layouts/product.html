@@ -23,11 +23,7 @@ layout: default
 	</article>
 </main>
 
-<script type='text/jsx'>
-  React.render(
-  	<AddToBasket name="{{ page.name }}" />,
-  	document.getElementById('addToBasket')
-  );
-
+<script>
+  renderComponent('addToBasket', AddToBasket, { name: "{{ page.name }}" });
   JSE.Stores.Basket.listen(function() {	window.location.href = '/basket'; });
 </script>

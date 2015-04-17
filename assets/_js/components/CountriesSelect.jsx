@@ -1,4 +1,8 @@
-CountriesSelect = React.createClass({
+var React = require('react');
+var Reflux = require('reflux');
+var JSE = require('JekyllStoreEngine');
+
+var CountriesSelect = React.createClass({
   mixins: [
     Reflux.connect(JSE.Stores.Countries),
     Reflux.connect(JSE.Stores.Address)
@@ -32,3 +36,5 @@ CountriesSelect = React.createClass({
     );
   }
 });
+
+module.exports = CountriesSelect;

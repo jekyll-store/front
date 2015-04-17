@@ -1,4 +1,9 @@
-OrderSummary = React.createClass({
+var React = require('react');
+var Reflux = require('reflux');
+var JSE = require('JekyllStoreEngine');
+var money = require('../helpers/money');
+
+var OrderSummary = React.createClass({
   mixins: [Reflux.connect(JSE.Stores.Order)],
   render: function() {
   	var order = this.state.order.toJS();
@@ -22,3 +27,5 @@ OrderSummary = React.createClass({
     );
   }
 });
+
+module.exports = OrderSummary;

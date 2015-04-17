@@ -1,4 +1,7 @@
-TagButtonGroup = React.createClass({
+var React = require('react');
+var JSE = require('JekyllStoreEngine');
+
+var TagButtonGroup = React.createClass({
   getInitialState: function() { return { selected: [] }; },
 
   select: function(tag) {
@@ -44,3 +47,5 @@ TagButtonGroup = React.createClass({
     );
   }
 });
+
+module.exports = TagButtonGroup;
