@@ -57,13 +57,13 @@ permalink: /checkout/
   }
 
   JSE.Stores.Order.listen(function() {
-    // Order has errors
+    /* Order has errors */
     spinner.hide();
     document.getElementById('checkoutForm').className = '';
   });
 
   JSE.Actions.completed.listen(function() { window.location.href = '/thankyou'; });
 
-  // Wake up server
+  /* Wake up server */
   SuperAgent.get('{{ site.wake_up }}').end();
 </script>
