@@ -25,5 +25,7 @@ layout: default
 
 <script>
   renderComponent('addToBasket', AddToBasket, { name: "{{ page.name }}" });
-  JSE.Stores.Basket.listen(function() {	window.location.href = '/basket'; });
+  JSE.Stores.Basket.listen(function() {
+  	window.location.href = '{{ site.baseurl }}/basket';
+  });
 </script>

@@ -4,10 +4,9 @@
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <meta name='description' content='{{ site.description }}'>
 
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <title>{% if page.title %}{{ page.title }} | {% elsif page.name %}{{ page.name }} | {% endif %}{{ site.title }}</title>
 
-  <link href='/assets/app.css' rel='stylesheet' type='text/css'>
-  <link href='{{ page.url | replace:'index.html', '' | prepend: site.url }}'
-        rel='canonical'>
-  <script src='/assets/app.js'></script>
+  <link href='{{ site.baseurl }}/assets/app.css' rel='stylesheet' type='text/css'>
+  <link href='{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html', '' }}' rel='canonical'>
+  <script src='{{ site.baseurl }}/assets/app.js'></script>
 </head>

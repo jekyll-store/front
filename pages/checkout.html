@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /checkout/
+title: Checkout
 ---
 
 <main id='checkout'>
@@ -62,7 +63,9 @@ permalink: /checkout/
     document.getElementById('checkoutForm').className = '';
   });
 
-  JSE.Actions.completed.listen(function() { window.location.href = '/thankyou'; });
+  JSE.Actions.completed.listen(function() {
+    window.location.href = '{{ site.baseurl }}/thankyou';
+  });
 
   /* Wake up server */
   SuperAgent.get('{{ site.wake_up }}').end();

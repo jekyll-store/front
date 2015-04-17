@@ -1,11 +1,14 @@
 ---
 layout: default
 permalink: /basket/
+title: Basket
 ---
 
 <main id='basket'>
 </main>
 
 <script>
-  renderComponent('basket', Basket);
+  renderComponent('basket', Basket, {
+  	checkout: '{{ site.baseurl }}/checkout'
+  });
 </script>

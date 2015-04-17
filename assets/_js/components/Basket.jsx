@@ -30,7 +30,7 @@ var Basket = React.createClass({
             </tr>
             <tr>
               <td></td><td></td><td></td>
-              <td><a href='/checkout' className='continue'>Checkout</a></td>
+              <td><a href={this.props.checkout} className='continue'>Checkout</a></td>
               <td></td>
             </tr>
           </tbody>

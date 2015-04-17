@@ -18,7 +18,7 @@ var BasketItem = React.createClass({
     return (
       <tr className='product'>
         <td>
-          <a href={item.url}>
+          <a href={'{{ site.baseurl }}' + item.url}>
           <h1>{item.name}</h1>
           <img src={'{{ site.image_prefix }}' + item.image} alt={item.name} />
           </a>

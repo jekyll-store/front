@@ -6,7 +6,7 @@ var DisplayItem = React.createClass({
     var product = this.props.product.toJS();
     return (
       <li>
-        <a href={product.url}>
+        <a href={'{{ site.baseurl }}' + product.url}>
           <img src={'{{ site.image_prefix }}' + product.image} alt={product.name} />
           <span className='name'>{product.name}</span>
           <span className='price'>{money(product.price)}</span>
