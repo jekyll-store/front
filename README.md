@@ -1,4 +1,4 @@
-# Jekll-Store [Demo](http://jekyll-store.com)
+# Jekll-Store - [Demo](http://jekyll-store.com/front)
 
 Jekyll-Store is a lightweight, backend-free ecommerce solution that is easy to deploy, maintain and customize. It is comprised of three parts:
 
