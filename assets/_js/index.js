@@ -1,7 +1,11 @@
 // Vendor
 window.accounting = require('accounting');
-require('./vendor/paymill');
 window.SuperAgent = require('superagent');
+require('./vendor/es5-shim.min');
+require('./vendor/es5-sham.min');
+require('./vendor/html5shiv');
+require('./vendor/paymill');
+require('./vendor/placeholders.min');
 
 // Engine
 window.JSE = require('jekyll-store-engine');
