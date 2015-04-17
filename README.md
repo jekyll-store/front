@@ -20,14 +20,13 @@ All products must have at least a unique name, price and image. All other meta-d
   * `country` - iso as defined in `/_data/countries.yml`
 
 * `payment`
-  * `tokenizer` - Name of a [Engine](https://github.com/jekyll-store/engine) tokenizer, corresponding to a supported payment gateway. Currently available:
-    * Paymill
+  * `tokenizer` - Name of a [Engine tokenizer](https://github.com/jekyll-store/engine#tokenizers), corresponding to a supported payment gateway.
   * `currency` - [ISO 4217](http://en.wikipedia.org/wiki/ISO_4217) currency code.
   * `hook` - url for your [Microservice](https://github.com/jekyll-store/microservice) instance or similar app for handling payment processing.
 
 * `image_prefix`: Folder or url to be prefixed to all images
 
-* `paymillPublicKey`: [Paymill public key](https://developers.paymill.com/en/introduction/your-account/). **Not** private key!
+* `paymillPublicKey`: [Paymill public key](https://developers.paymill.com/en/introduction/your-account/) (Only if using Paymill)
 
 * `accounting`: [accounting.js config](http://openexchangerates.github.io/accounting.js/#documentation)
 
@@ -54,9 +53,14 @@ Each delivery method must have a calculator that is the name of a valid [Jekll-S
 
 To keep your [Microservice](https://github.com/jekyll-store/microservice) instance (or similar) up to date. Make sure to create a [github webhook](https://developer.github.com/webhooks/creating/) on your repository with it's reset url.
 
-## JSX Transformer
+## Building Javascript
 
-The [React](https://github.com/facebook/react) components can be found in `/assets/_js/components` and are collated into the `assets/components.jsx` file. This file is then transpiled into javascript live in browser using Facebook's JSX Transformer. This allows for easy development as components can be edited just like any other file. However for production, if you want to improve performance, it is advised to transpile offline using [react-tools](https://www.npmjs.com/package/react-tools).
+Jekyll-Store Front uses [Browersify](https://github.com/substack/node-browserify) to compile the scripts together and to transpile JSX. If you would like to make changes to any of these files, you will have to do the following:
+
+1. Install [node.js](https://nodejs.org/download/)
+2. Install the packages: `npm install`
+3. Watch whilst making changes: `npm run watch`
+4. Build the finalized version: `npm run build`
 
 ## Contributing
 
