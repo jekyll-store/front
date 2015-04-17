@@ -1,5 +1,5 @@
 var form2js = require('../vendor/form2js').form2js;
-var JSE = require('JekyllStoreEngine');
+var JSE = require('jekyll-store-engine');
 
 function serializeAndPurchase(formElement) {
   var form = form2js(formElement);

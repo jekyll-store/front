@@ -1,5 +1,5 @@
 var React = require('react');
-var JSE = require('JekyllStoreEngine');
+var JSE = require('jekyll-store-engine');
 
 var SortButtonGroup = React.createClass({
   getInitialState: function() { return { selected: null, direction: null }; },

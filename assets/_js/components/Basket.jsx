@@ -1,6 +1,6 @@
 var React = require('react');
 var Reflux = require('reflux');
-var JSE = require('JekyllStoreEngine');
+var JSE = require('jekyll-store-engine');
 var BasketItem = require('./BasketItem.jsx');
 var money = require('../helpers/money');
 

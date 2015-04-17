@@ -1,5 +1,5 @@
 var React = require('react');
-var JSE = require('JekyllStoreEngine');
+var JSE = require('jekyll-store-engine');
 
 var AddToBasket = React.createClass({
   getInitialState: function() { return { quantity: 1 }; },

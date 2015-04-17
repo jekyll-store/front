@@ -1,6 +1,6 @@
 var React = require('react');
 var Reflux = require('reflux');
-var JSE = require('JekyllStoreEngine');
+var JSE = require('jekyll-store-engine');
 var DisplayItem = require('./DisplayItem.jsx');
 
 var Display = React.createClass({

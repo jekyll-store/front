@@ -3,7 +3,7 @@ window.accounting = require('accounting');
 require('./vendor/paymill');
 
 // Engine
-window.JSE = require('JekyllStoreEngine');
+window.JSE = require('jekyll-store-engine');
 
 // Components
 window.BasketSummary     = require('./components/BasketSummary.jsx');
