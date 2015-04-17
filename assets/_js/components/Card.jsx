@@ -6,27 +6,27 @@ var Card = React.createClass({
     return { number: '', expiry: '', cvc: '' };
   },
 
-	number: function(e){
-		var number = e.target.value.replace(/ /g, '');
-		number = (number.match(/\d{1,4}/g) || []).join(' ');
-		this.setState({ number: number.substring(0, 23) });
-	},
+  number: function(e){
+    var number = e.target.value.replace(/ /g, '');
+    number = (number.match(/\d{1,4}/g) || []).join(' ');
+    this.setState({ number: number.substring(0, 23) });
+  },
 
-	expiry: function(e){
-		var expiry = e.target.value;
-		expiry = expiry.match(/\/$/) ? expiry.substring(0, 1) : expiry;
+  expiry: function(e){
+    var expiry = e.target.value;
+    expiry = expiry.match(/\/$/) ? expiry.substring(0, 1) : expiry;
     var expiry = expiry.match(/\d/g) || [];
     if(expiry.length > 1) { expiry.splice(2, 0, ' / ') };
     this.setState({ expiry: expiry.join('').substring(0, 9) });
-	},
+  },
 
-	cvc: function(e){
-		this.setState({ cvc: e.target.value.match(/\d{0,5}/)[0] });
-	},
+  cvc: function(e){
+    this.setState({ cvc: e.target.value.match(/\d{0,5}/)[0] });
+  },
 
   render: function() {
-  	return (
-  		<div>
+    return (
+      <div>
         <input type='text'
                name='card.number'
                placeholder='Card Number'

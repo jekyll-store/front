@@ -6,8 +6,8 @@ var money = require('../helpers/money');
 var OrderSummary = React.createClass({
   mixins: [Reflux.connect(JSE.Stores.Order)],
   render: function() {
-  	var order = this.state.order.toJS();
-  	return (
+    var order = this.state.order.toJS();
+    return (
       <table>
         <tbody>
           <tr><th>Item Total</th><th>{money(order.totals.price)}</th></tr>

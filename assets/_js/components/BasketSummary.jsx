@@ -7,8 +7,8 @@ var BasketSummary = React.createClass({
   mixins: [Reflux.connect(JSE.Stores.Order)],
 
   render: function() {
-  	var total = this.state.order.getIn(['totals', 'price']);
-  	return total.gt(0) ? this.renderSummary(total) : null;
+    var total = this.state.order.getIn(['totals', 'price']);
+    return total.gt(0) ? this.renderSummary(total) : null;
   },
 
   renderSummary: function(total) {
