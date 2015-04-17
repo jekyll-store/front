@@ -1,6 +1,7 @@
 // Vendor
 window.accounting = require('accounting');
 require('./vendor/paymill');
+window.SuperAgent = require('superagent');
 
 // Engine
 window.JSE = require('jekyll-store-engine');

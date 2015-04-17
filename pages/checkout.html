@@ -63,4 +63,7 @@ permalink: /checkout/
   });
 
   JSE.Actions.completed.listen(function() { window.location.href = '/thankyou'; });
+
+  // Wake up server
+  SuperAgent.get('{{ site.wake_up }}').end();
 </script>

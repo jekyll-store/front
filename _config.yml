@@ -12,6 +12,7 @@ payment:
 # Jekll-Store Front
 image_prefix: 'http://res.cloudinary.com/jekyll-store/'
 paymillPublicKey: 323027826220f6ed944b96a1a47e35a0
+wake_up: 'http://jekyll-store-microservice.herokuapp.com/ping'
 
 # http://openexchangerates.github.io/accounting.js/#documentation
 accounting:
