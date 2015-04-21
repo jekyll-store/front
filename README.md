@@ -1,12 +1,14 @@
-# Jekll-Store - [Demo](http://jekyll-store.com/front)
+# Jekll-Store - [Demo](http://www.jekyll-store.com/front)
 
-Jekyll-Store is a lightweight, backend-free ecommerce solution that is easy to deploy, maintain and customize. It is comprised of three parts:
+Jekyll-Store is a CMS-free ecommerce solution that is easy to deploy, maintain and customize. It is comprised of three parts:
 
 * [Jekll-Store Front](https://github.com/jekyll-store/front): a front-end made with the [Jekyll](https://github.com/jekyll/jekyll) static-site generator and reusable [React](https://github.com/facebook/react) components.
 
 * [Jekll-Store Engine](https://github.com/jekyll-store/engine): javascript business logic written with the [RefluxJS](https://github.com/spoike/refluxjs) derivative of the [Flux](https://github.com/facebook/flux) architecture.
 
 * [Jekyll-Store Microservice](https://github.com/jekyll-store/microservice): a small app for processing payments and sending transactional emails, currently written in Ruby.
+
+Why? [A Case for CMS-Free Ecommerce](http://pigeons-and-creoles.co.uk/architecture/a-case-for-cms-free-ecommerce/)
 
 # Front
 
