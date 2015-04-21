@@ -2,29 +2,37 @@
 layout: default
 ---
 <main id='product'>
-	<aside>
-    <img src='{{ site.image_prefix }}{{ page.image }}' alt='{{ page.name }}' />
-		<table>
-			<tr> <th> Type      </th> <td> {{ page.type }}      </td> </tr>
-			<tr> <th> Condition </th> <td> {{ page.condition }} </td> </tr>
-			<tr> <th> Weight    </th> <td> {{ page.weight }}kg </td> </tr>
-		</table>
-	</aside>
-	<article>
-		<header>
-			<h1>{{ page.name }}</h1>
-			<h2>£{{ page.price }}</h2>
-		</header>
-		<div id='addToBasket'></div>
-		<section>
+	<div class='row'>
+		<aside>
+	    <img src='{{ site.image_prefix }}{{ page.image }}' alt='{{ page.name }}' />
+			<table>
+				<tr> <th> Type      </th> <td> {{ page.type }}      </td> </tr>
+				<tr> <th> Condition </th> <td> {{ page.condition }} </td> </tr>
+				<tr> <th> Weight    </th> <td> {{ page.weight }}kg </td> </tr>
+			</table>
+		</aside>
+		<article>
+			<header>
+				<h1>{{ page.name }}</h1>
+				<h2>£{{ page.price }}</h2>
+			</header>
+			<div id='addToBasket'></div>
 			<p>{{ content }}</p>
-      <img src='{{ site.image_prefix }}{{ page.big_image }}' alt='{{ page.name }}' />
-		</section>
-	</article>
+      <img src='{{ site.image_prefix }}{{ page.big_image }}'
+           alt='{{ page.name }}' />
+		</article>
+	</div>
+	<div class='row'>
+	<section class='yotpo yotpo-main-widget'
+		data-product-id='{{ page.url }}'
+		data-name='{{ page.name }}'
+		data-url='{{ site.url }}{{ site.baseurl }}{{ page.url }}'
+		data-image-url='{{ site.image_prefix }}{{ page.image }}'>
+	</section>
 </main>
 
 <script>
-  renderComponent('addToBasket', AddToBasket, { name: "{{ page.name }}" });
+  renderComponent('addToBasket', AddToBasket, { name: '{{ page.name }}' });
   JSE.Stores.Basket.listen(function() {
   	window.location.href = '{{ site.baseurl }}/basket';
   });

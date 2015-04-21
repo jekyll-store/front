@@ -6,6 +6,7 @@ require('./vendor/es5-sham.min');
 require('./vendor/html5shiv');
 require('./vendor/paymill');
 require('./vendor/placeholders.min');
+require('./vendor/yotpo');
 
 // Engine
 window.JSE = require('jekyll-store-engine');
