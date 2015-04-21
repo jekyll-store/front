@@ -1,14 +1,14 @@
 <header id='nav' role='banner'>
   <div id='nav-wrapper'>
     <a href='{{ site.baseurl }}/' id='mobile-logo'>
-      <img src='{{ site.baseurl }}/assets/images/logo.png' alt='Logo'>
+      <img src='{{ site.image_prefix }}logo.png' alt='Logo'>
     </a>
     <i id='nav-mobile-menu' onclick='toggle("nav-menu", "show")'>MENU</i>
     <nav role='navigation'>
       <ul id='nav-menu'>
         <li class='nav-link logo'>
           <a href='{{ site.baseurl }}/' class='logo'>
-            <img src='{{ site.baseurl }}/assets/images/logo.png' alt='Logo'>
+            <img src='{{ site.image_prefix }}logo.png' alt='Logo'>
             Jekyll-Store
           </a>
         </li>
@@ -26,7 +26,7 @@
 
 <script>
   renderComponent('basket-summary', BasketSummary, {
-    img: '{{ site.baseurl }}/assets/images/cart.png',
+    img: '{{ site.image_prefix }}cart.png',
     link: '{{ site.baseurl }}/basket'
   });
 </script>
