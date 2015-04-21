@@ -49,6 +49,10 @@ Each delivery method must have a calculator that is the name of a valid [Jekll-S
 * Percent
 * Tiered
 
+## json
+
+`products.json` must have the fields used for the products explicitly stated.
+
 ## Reset Hook
 
 To keep your [Microservice](https://github.com/jekyll-store/microservice) instance (or similar) up to date. Make sure to create a [github webhook](https://developer.github.com/webhooks/creating/) on your repository with it's reset url.

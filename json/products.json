@@ -3,7 +3,19 @@ layout: compress
 permalink: /products.json
 ---
 
-[{% for product in site.products %}
-{{ product | strip_html | replace: '\n', '' | replace: '=>', ':' }}
-{% if forloop.last %}{% else %},{% endif %}
-{% endfor %}]
+[
+	{% for product in site.products %}
+		{
+			"name": "{{ product.name }}",
+			"price": {{ product.price }},
+			"weight": {{ product.weight }},
+			"designer": "{{ product.designer }}",
+			"type": "{{ product.type }}",
+			"condition": "{{ product.condition }}",
+			"image": "{{ product.image }}",
+			"big_image": "{{ product.big_image }}",
+			"url": "{{ product.url }}"
+		}
+		{% if forloop.last %}{% else %},{% endif %}
+	{% endfor %}
+]
