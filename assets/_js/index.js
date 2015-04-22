@@ -10,6 +10,7 @@ require('./vendor/yotpo');
 
 // Engine
 window.JSE = require('jekyll-store-engine');
+require('jekyll-store-display');
 
 // Components
 window.BasketSummary     = require('./components/BasketSummary.jsx');

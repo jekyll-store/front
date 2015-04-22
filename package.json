@@ -18,7 +18,8 @@
   "homepage": "https://github.com/jekyll-store/front",
   "devDependencies": {
     "accounting": "^0.4.1",
-    "jekyll-store-engine": "0.0.1",
+    "jekyll-store-engine": "0.1.0",
+    "jekyll-store-display": "0.0.1",
     "react": "^0.13.1",
     "reactify": "^1.1.0",
     "reflux": "^0.2.7",
