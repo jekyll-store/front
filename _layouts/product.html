@@ -1,23 +1,37 @@
 ---
 layout: default
 ---
-<main id='product'>
+<main id='product' itemscope itemtype='http://schema.org/Product'>
 	<div class='row'>
 		<aside>
-	    <img src='{{ site.image_prefix }}{{ page.image }}' alt='{{ page.name }}' />
+	    <img src='{{ site.image_prefix }}{{ page.image }}'
+	         alt='{{ page.name }}'
+	         itemprop='image'/>
 			<table>
-				<tr> <th> Type      </th> <td> {{ page.type }}      </td> </tr>
-				<tr> <th> Condition </th> <td> {{ page.condition }} </td> </tr>
-				<tr> <th> Weight    </th> <td> {{ page.weight }}kg </td> </tr>
+				<tr>
+					<th>Type</th>
+					<td>{{ page.type }}</td>
+				</tr>
+				<tr>
+					<th>Condition</th>
+					<td itemprop='itemCondition'>{{ page.condition }}</td>
+				</tr>
+				<tr>
+					<th>Weight</th>
+				  <td itemprop='weight'>{{ page.weight }}kg</td>
+				</tr>
 			</table>
 		</aside>
 		<article>
 			<header>
-				<h1>{{ page.name }}</h1>
-				<h2>£{{ page.price }}</h2>
+				<h1 itemprop='name'>{{ page.name }}</h1>
+				<h2 itemprop='offers' itemscope itemtype='http://schema.org/Offer'>
+					<span itemprop='priceCurrency' content='GBP'>£</span>
+					<span itemprop='price' content='{{ page.price }}'>{{ page.price }}</span>
+				</h2>
 			</header>
 			<div id='addToBasket'></div>
-			<p>{{ content }}</p>
+			<p itemprop='description'>{{ content }}</p>
       <img src='{{ site.image_prefix }}{{ page.big_image }}'
            alt='{{ page.name }}' />
 		</article>
