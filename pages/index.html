@@ -4,52 +4,30 @@ permalink: /
 title: Home
 ---
 
-<main id='index'>
+<main id='index-page'>
 	<aside>
 		<h1 onclick="toggle('filters', 'show')">Filters</h1>
 		<div id='filters'>
-			<div id='search'></div>
-			<div id='sort'></div>
-			<div id='type'></div>
-			<div id='condition'></div>
-			<div id='price-range'></div>
-			<div id='weight-range'></div>
+			<div id='search' data-field='"name"'></div>
+			<div id='sort'
+           data-fields="['price', 'weight']"
+           data-labels="['Price', 'Weight']"></div>
+			<div id='type'
+           data-field='"type"'
+           data-tags="['Wood', 'Metal', 'Metallic']"></div>
+			<div id='condition'
+           data-field='"condition"'
+           data-tags="['Mint', 'Worn', 'Rough']"></div>
+			<div id='price-range'
+           data-field='"price"'
+           data-ranges="[[0, 300], [300, 400], [400, 500], [500, 800]]"
+           data-labels="['< £300', '£300 - £400', '£400 - £500', '> £500']"></div>
+			<div id='weight-range'
+           data-field='"weight"'
+           data-ranges="[[0, 3], [3, 3.5], [3.5, 4], [4, 6]]"
+           data-labels="['< 3kg', '3kg - 3.5kg', '3.5kg - 4kg', '> 4kg']"></div>
 		</div>
 	</aside>
 	<article id='display'></article>
-	<div id='pagination'></div>
+	<div id='pagination' data-pagesize='6'></div>
 </main>
-
-<script>
-  renderComponent('search', SearchBox, { field: 'name' });
-
-  renderComponent('sort', SortButtonGroup, {
-  	fields: ['price', 'weight'],
-  	labels: ['Price', 'Weight']
-  });
-
-  renderComponent('type', TagButtonGroup, {
-  	field: 'type',
-  	tags: ['Wood', 'Metal', 'Metallic']
-  });
-
-  renderComponent('condition', TagButtonGroup, {
-  	field: 'condition',
-  	tags: ['Mint', 'Worn', 'Rough']
-  });
-
-  renderComponent('price-range', RangesButtonGroup, {
-  	field: 'price',
-  	ranges: [[0, 300], [300, 400], [400, 500], [500, 800]],
-    labels: ['< £300', '£300 - £400', '£400 - £500', '> £500']
-  });
-
-  renderComponent('weight-range', RangesButtonGroup, {
-  	field: 'weight',
-  	ranges: [[0, 3], [3, 3.5], [3.5, 4], [4, 6]],
-    labels: ['< 3kg', '3kg - 3.5kg', '3.5kg - 4kg', '> 4kg']
-  });
-
-  renderComponent('display', Display);
-  renderComponent('pagination', Pagination, { pageSize: 6 });
-</script>

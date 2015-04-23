@@ -20,7 +20,7 @@ var Pagination = React.createClass({
   setPage: function(i) {
     JSE.Actions.setDisplayFilter({
       name: 'page',
-      filter: JSE.Filters.Page(this.props.pageSize, i)
+      filter: JSE.Filters.Page(this.props.pagesize, i)
     });
   },
 

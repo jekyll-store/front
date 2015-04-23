@@ -4,7 +4,7 @@ permalink: /checkout/
 title: Checkout
 ---
 
-<main id='checkout'>
+<main id='checkout-page'>
   <h1 class='title'>Checkout</h1>
   <div id='errors'></div>
   <form onsubmit='submitPurchase(event, this)' id='checkoutForm'>
@@ -42,31 +42,3 @@ title: Checkout
     </section>
   </form>
 </main>
-
-<script>
-  renderComponent('errors', Errors);
-  renderComponent('countries', CountriesSelect);
-  renderComponent('delivery', DeliverySelect);
-  renderComponent('card', Card);
-  renderComponent('order-summary', OrderSummary);
-
-  function submitPurchase(event, form) {
-    event.preventDefault ? event.preventDefault() : event.returnValue = false;
-    spinner.show('checkout');
-    form.className = 'hide';
-    serializeAndPurchase(form);
-  }
-
-  JSE.Stores.Order.listen(function() {
-    /* Order has errors */
-    spinner.hide();
-    document.getElementById('checkoutForm').className = '';
-  });
-
-  JSE.Actions.completed.listen(function() {
-    window.location.href = '{{ site.baseurl }}/thankyou';
-  });
-
-  /* Wake up server */
-  SuperAgent.get('{{ site.wake_up }}').end();
-</script>

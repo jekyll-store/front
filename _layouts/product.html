@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<main id='product' itemscope itemtype='http://schema.org/Product'>
+<main id='product-page' itemscope itemtype='http://schema.org/Product'>
 	<div class='row'>
 		<aside>
 	    <img src='{{ site.image_prefix }}{{ page.image }}'
@@ -30,7 +30,7 @@ layout: default
 					<span itemprop='price' content='{{ page.price }}'>{{ page.price }}</span>
 				</h2>
 			</header>
-			<div id='addToBasket'></div>
+			<div id='addToBasket' data-name='"{{ page.name }}"'></div>
 			<p itemprop='description'>{{ content }}</p>
       <img src='{{ site.image_prefix }}{{ page.big_image }}'
            alt='{{ page.name }}' />
@@ -43,10 +43,3 @@ layout: default
 		data-image-url='{{ site.image_prefix }}{{ page.image }}'>
 	</section>
 </main>
-
-<script>
-  renderComponent('addToBasket', AddToBasket, { name: '{{ page.name }}' });
-  JSE.Stores.Basket.listen(function() {
-  	window.location.href = '{{ site.baseurl }}/basket';
-  });
-</script>

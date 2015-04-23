@@ -1,11 +1,10 @@
 var form2js = require('../vendor/form2js').form2js;
-var JSE = require('jekyll-store-engine');
 
-function serializeAndPurchase(formElement) {
+function serializeForm(formElement) {
   var form = form2js(formElement);
   splitExpiry(form);
   form.card.number = form.card.number.replace(/ /g, '');
-  JSE.Actions.purchase(form);
+  return form;
 }
 
 function splitExpiry(form) {
@@ -15,4 +14,4 @@ function splitExpiry(form) {
   delete form.card.expiry;
 }
 
-module.exports = serializeAndPurchase;
+module.exports = serializeForm;

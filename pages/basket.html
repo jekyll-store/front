@@ -4,11 +4,5 @@ permalink: /basket/
 title: Basket
 ---
 
-<main id='basket'>
+<main id='basket-page' data-checkout='"{{ site.baseurl }}/checkout"'>
 </main>
-
-<script>
-  renderComponent('basket', Basket, {
-  	checkout: '{{ site.baseurl }}/checkout'
-  });
-</script>

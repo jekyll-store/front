@@ -22,3 +22,4 @@ JSE.Actions.loadDeliveryMethods({
   methods: {{ site.data.delivery-methods | replace: '=>', ':' }}
 });
 
+renderComponents();

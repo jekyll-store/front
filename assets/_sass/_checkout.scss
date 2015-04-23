@@ -1,4 +1,4 @@
-#checkout {
+#checkout-page {
 	@include media($large-screen) {
 		section { @include span-columns(6); }
 	}

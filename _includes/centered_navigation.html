@@ -18,15 +18,11 @@
           </a>
         </li>
         <li class='nav-link'><a href='javascript:void(0)'>Contact</a></li>
-        <li class='nav-link' id='basket-summary'></li>
+        <li class='nav-link'
+            id='basket-summary'
+            data-img='"{{ site.image_prefix }}cart.png"'
+            data-link='"{{ site.baseurl }}/basket"'></li>
       </ul>
     </nav>
   </div>
 </header>
-
-<script>
-  renderComponent('basket-summary', BasketSummary, {
-    img: '{{ site.image_prefix }}cart.png',
-    link: '{{ site.baseurl }}/basket'
-  });
-</script>
