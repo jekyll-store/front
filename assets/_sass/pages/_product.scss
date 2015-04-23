@@ -1,0 +1,56 @@
+#product-page {
+  margin-top: 15px;
+  header { padding: 5px 10px; @include row; }
+
+  h1 {
+    font-size: 4em;
+    background: #ECECEC;
+    padding-left: 5px;
+  }
+
+  h2 {
+    font-size: 3em;
+    margin: -35px 0 5px;
+    background: #F7F7F7;
+    padding-left: 5px;
+  }
+
+  aside { @include span-columns(3); }
+  article { @include span-columns(9); }
+
+  #addToBasket {
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    height: 3.5em;
+    box-shadow: 0 0 1px 1px #DADADA;
+    background: #F7F7F7;
+  }
+
+  input, button { @include span-columns(4 of 8) }
+
+  .description {
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 1px 1px #DADADA;
+    background: #F7F7F7;
+  }
+
+  article img {
+    border: 1px solid #D7D7D7;
+    box-shadow: 0 0 1px 1px #D7D7D7;
+    border-radius: 15px;
+  }
+
+  #visited-products {
+    margin-top: 5em;
+    li {
+      @include span-columns(4);
+      @include omega(3n);
+      margin-bottom: 2em;
+    }
+  }
+
+  .row { @include row; }
+  .yotpo { padding-bottom: 5em; }
+}

@@ -10,12 +10,21 @@ require('./vendor/placeholders.min');
 // Engine
 window.JSE = require('jekyll-store-engine');
 require('jekyll-store-display');
+require('jekyll-store-visited');
 
 // Helpers
-window.renderComponents = require('./helpers/renderComponents');
 window.toggle = require('./helpers/toggle');
 window.loadJSON = require('./helpers/loadJSON');
 
-// Pages
-require('./pages/product');
-window.submitPurchase = require('./pages/checkout').submitPurchase;
+// After Load
+var afterLoad = require('reflux').joinLeading(
+	JSE.Stores.Products,
+	JSE.Stores.Countries,
+	JSE.Stores.DeliveryMethods
+);
+
+afterLoad.listen(function() {
+	require('./renderComponents');
+	require('./pages/product');
+	window.submitPurchase = require('./pages/checkout').submitPurchase;
+});

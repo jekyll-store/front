@@ -66,11 +66,11 @@ html, body {
 
   .footer-logo img {
     height: 1.6em;
-  } 
+  }
 
   ul {
     margin-bottom: 1em;
-    
+
     @include media($large-screen) {
       float: left;
       line-height: 1.8em;

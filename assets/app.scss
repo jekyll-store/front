@@ -10,9 +10,10 @@ layout: compress
 @import 'vendor/refills/base';
 @import 'vendor/omega-reset';
 
-@import 'layout';
-@import 'index';
-@import 'product';
-@import 'basket';
-@import 'checkout';
-@import 'thankyou';
+@import 'shared/layout';
+@import 'shared/product';
+@import 'pages/index';
+@import 'pages/product';
+@import 'pages/basket';
+@import 'pages/checkout';
+@import 'pages/thankyou';

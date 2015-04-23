@@ -1,11 +1,11 @@
 var React = require('react');
 var money = require('../helpers/money');
 
-var DisplayItem = React.createClass({
+var Product = React.createClass({
   render: function() {
     var product = this.props.product.toJS();
     return (
-      <li>
+      <li className='product'>
         <a href={'{{ site.baseurl }}' + product.url}>
           <img src={'{{ site.image_prefix }}' + product.image} alt={product.name} />
           <span className='name'>{product.name}</span>
@@ -16,4 +16,4 @@ var DisplayItem = React.createClass({
   }
 });
 
-module.exports = DisplayItem;
+module.exports = Product;

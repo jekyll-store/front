@@ -1,0 +1,21 @@
+.product {
+  color: #999;
+  padding: 2%;
+
+  a {
+    color: #333;
+    &:hover { color: #333; }
+  }
+
+  img {
+    margin: auto;
+    display: block;
+  }
+
+  .price { float: right; }
+
+  .no-products {
+    text-align: center;
+    line-height: 750px;
+  }
+}

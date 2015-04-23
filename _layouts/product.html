@@ -1,7 +1,17 @@
 ---
 layout: default
 ---
-<main id='product-page' itemscope itemtype='http://schema.org/Product'>
+<main id='product-page'
+			itemscope
+			itemtype='http://schema.org/Product'
+			data-name='{{ page.name }}'>
+	<header>
+		<h1 itemprop='name'>{{ page.name }}</h1>
+		<h2 itemprop='offers' itemscope itemtype='http://schema.org/Offer'>
+			<span itemprop='priceCurrency' content='GBP'>£</span>
+			<span itemprop='price' content='{{ page.price }}'>{{ page.price }}</span>
+		</h2>
+	</header>
 	<div class='row'>
 		<aside>
 	    <img src='{{ site.image_prefix }}{{ page.image }}'
@@ -23,19 +33,13 @@ layout: default
 			</table>
 		</aside>
 		<article>
-			<header>
-				<h1 itemprop='name'>{{ page.name }}</h1>
-				<h2 itemprop='offers' itemscope itemtype='http://schema.org/Offer'>
-					<span itemprop='priceCurrency' content='GBP'>£</span>
-					<span itemprop='price' content='{{ page.price }}'>{{ page.price }}</span>
-				</h2>
-			</header>
-			<div id='addToBasket' data-name='"{{ page.name }}"'></div>
-			<p itemprop='description'>{{ content }}</p>
       <img src='{{ site.image_prefix }}{{ page.big_image }}'
            alt='{{ page.name }}' />
+			<div id='addToBasket' data-name='"{{ page.name }}"'></div>
+			<div itemprop='description' class='description'>{{ content }}</div>
 		</article>
 	</div>
+	<div id='visited'></div>
 	<section class='yotpo yotpo-main-widget'
 		data-product-id='{{ page.url }}'
 		data-name='{{ page.name }}'

@@ -1,7 +1,7 @@
 var React = require('react');
 var Reflux = require('reflux');
 var JSE = require('jekyll-store-engine');
-var DisplayItem = require('./DisplayItem.jsx');
+var Product = require('./Product.jsx');
 
 var Display = React.createClass({
   mixins: [Reflux.connect(JSE.Stores.Display)],
@@ -14,7 +14,7 @@ var Display = React.createClass({
           <ul>
             {
               products.map(function(product, i) {
-                return <DisplayItem product={product} key={i}/>
+                return <Product product={product} key={i}/>;
               })
             }
           </ul>

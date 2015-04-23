@@ -36,11 +36,9 @@
 	}
 	padding: 10px 0;
 
-	li {
+	.product {
 		@include shift(1);
 		@include span-columns(10);
-		color: #999;
-		padding: 2%;
 
     @include media($medium-screen) {
 			@include span-columns(4.5 of 9);
@@ -53,23 +51,6 @@
 			@include span-columns(3 of 9);
 			@include omega(3n);
 		}
-	}
-
-	a {
-		color: #333;
-		&:hover { color: #333; }
-	}
-
-	img {
-		margin: auto;
-  	display: block;
-	}
-
-	.price { float: right; }
-
-	.no-products {
-		text-align: center;
-  	line-height: 750px;
 	}
 }
 
