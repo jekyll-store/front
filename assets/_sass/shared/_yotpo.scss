@@ -1,0 +1,10 @@
+section.yotpo a {
+	font-family: $base-font-family;
+  color: #222 !important;
+  &:hover { color: #222 !important; }
+}
+
+.yotpo .yotpo-default-button {
+  background: #40526B !important;
+  font-family: $base-font-family !important;
+}
