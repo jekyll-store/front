@@ -5,9 +5,13 @@
 		@include span-columns(3);
 
 		#filters { display: initial; }
+		h1 { display: none; }
 	}
 
-	@include media($large-screen) {	height: 750px; }
+	@include media($large-screen) {
+		@include span-columns(2);
+		height: 750px;
+	}
 
 	margin-top: 15px;
 
@@ -22,7 +26,7 @@
 	input {
 		margin: 10px 5px;
 		border-color: silver;
-		width: 98%;
+		width: 95%;
 	}
 
 	button.ascending:after { content: '\2227'; }
@@ -34,6 +38,12 @@
 		@include span-columns(9);
 		@include omega;
 	}
+
+	@include media($large-screen) {
+		@include span-columns(10);
+		@include omega;
+	}
+
 	padding: 10px 0;
 
 	.product {
@@ -48,7 +58,7 @@
 
     @include media($large-screen) {
     	@include omega-reset(2n);
-			@include span-columns(3 of 9);
+			@include span-columns(3.33 of 10);
 			@include omega(3n);
 		}
 	}

@@ -40,7 +40,7 @@ var SortButtonGroup = React.createClass({
 
   render: function() {
     return (
-      <div className='button-group horizontal'>
+      <div className='button-group'>
         {
           this.props.fields.map(function(field, i) {
             var selected = this.state.selected === field ? 'selected' : '';

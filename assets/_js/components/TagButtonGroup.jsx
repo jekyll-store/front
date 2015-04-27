@@ -30,7 +30,7 @@ var TagButtonGroup = React.createClass({
 
   render: function() {
     return (
-      <div className='button-group horizontal'>
+      <div className='button-group'>
         {
           this.props.tags.map(function(tag, i) {
             return (
