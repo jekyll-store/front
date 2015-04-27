@@ -13,8 +13,8 @@
   $base-font-color: $dark-gray !default;
   //////////////////////////////////////////////////////////////////////////////////
 
-  $button-group-background: $base-background-color;
-  $button-group-color: lighten($base-font-color, 30%);
+  $button-group-background: #EDEDED;
+  $button-group-color: #666;
   $button-group-border: 1px solid silver;
   $button-group-inner-border: 1px solid lighten(silver, 18%);
   $button-group-background-checked: $base-accent-color;

@@ -1,4 +1,5 @@
 #index-page aside {
+	margin-top: 5px;
 	#filters { display: none; }
 
 	@include media($medium-screen) {
@@ -11,9 +12,8 @@
 	@include media($large-screen) {
 		@include span-columns(2);
 		height: 750px;
+		margin-top: 15px;
 	}
-
-	margin-top: 15px;
 
 	h1 {
 		text-align: center;
@@ -43,8 +43,6 @@
 		@include span-columns(10);
 		@include omega;
 	}
-
-	padding: 10px 0;
 
 	.product {
 		@include shift(1);
