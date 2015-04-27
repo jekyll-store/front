@@ -1,0 +1,38 @@
+#favourites-page {
+	padding: 10px 0;
+
+	.product {
+		@include shift(1);
+		@include span-columns(10);
+
+    @include media($medium-screen) {
+			@include span-columns(4 of 12);
+			@include omega(3n);
+			@include shift(0);
+		}
+
+    @include media($large-screen) {
+    	@include omega-reset(3n);
+			@include span-columns(3 of 12);
+			@include omega(4n);
+		}
+	}
+
+	#favourites {
+	 margin-bottom: 3em;
+	}
+
+	#favourites, #visited { @include row; }
+
+  .no-products {
+    text-align: center;
+    line-height: 500px;
+  }
+
+  h2 {
+    font-size: 3em;
+    margin: -35px 0 5px;
+    background: #F7F7F7;
+    padding-left: 5px;
+  }
+}

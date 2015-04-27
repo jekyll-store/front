@@ -10,6 +10,8 @@ layout: compress
 @import 'vendor/refills/base';
 @import 'vendor/omega-reset';
 
+@import 'vendor/font-awesome/font-awesome';
+
 @import 'shared/layout';
 @import 'shared/product';
 @import 'pages/index';
@@ -17,3 +19,4 @@ layout: compress
 @import 'pages/basket';
 @import 'pages/checkout';
 @import 'pages/thankyou';
+@import 'pages/favourites';

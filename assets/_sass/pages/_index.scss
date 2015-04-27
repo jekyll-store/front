@@ -52,6 +52,11 @@
 			@include omega(3n);
 		}
 	}
+
+  .no-products {
+    text-align: center;
+    line-height: 750px;
+  }
 }
 
 #pagination {

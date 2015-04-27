@@ -1,5 +1,4 @@
 .product {
-  color: #999;
   padding: 2%;
 
   a {
@@ -12,10 +11,40 @@
     display: block;
   }
 
-  .price { float: right; }
-
-  .no-products {
-    text-align: center;
-    line-height: 750px;
+  .details {
+    @include row;
+    background: #EDEDED;
+    padding: 5px 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px #C3C3C3;
+    margin-top: 1px;
+    & > div { @include span-columns(1 of 2); }
+    &.added { background: #D7F7D1; }
+    .details-buttons { text-align: right; }
   }
+
+  .fa {
+    font-size: 1.5em;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .add {
+    @extend .fa, .fa-plus;
+    color: #B2D0FF;
+    &:hover { color: #6BA4FD; }
+  }
+
+  i.added {
+    @extend .fa, .fa-check;
+    color: #56C263;
+  }
+
+  .favourite, .favourited {
+    color: #F59D54;
+    &:hover { color: #F97100; }
+  }
+
+  .favourite { @extend .fa, .fa-star-o; }
+  .favourited { @extend .fa, .fa-star; }
 }

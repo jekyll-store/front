@@ -11,6 +11,7 @@ require('./vendor/placeholders.min');
 window.JSE = require('jekyll-store-engine');
 require('jekyll-store-display');
 require('jekyll-store-visited');
+require('jekyll-store-favourites');
 
 // Helpers
 window.toggle = require('./helpers/toggle');

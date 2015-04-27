@@ -1,44 +1,33 @@
-var BasketSummary     = require('./components/BasketSummary.jsx');
-var SearchBox         = require('./components/SearchBox.jsx');
-var SortButtonGroup   = require('./components/SortButtonGroup.jsx');
-var TagButtonGroup    = require('./components/TagButtonGroup.jsx');
+var TagButtonGroup = require('./components/TagButtonGroup.jsx');
 var RangesButtonGroup = require('./components/RangesButtonGroup.jsx');
-var Display           = require('./components/Display.jsx');
-var Pagination        = require('./components/Pagination.jsx');
-var AddToBasket       = require('./components/AddToBasket.jsx');
-var Visited           = require('./components/Visited.jsx');
-var Basket            = require('./components/Basket.jsx');
-var Errors            = require('./components/Errors.jsx');
-var CountriesSelect   = require('./components/CountriesSelect.jsx');
-var DeliverySelect    = require('./components/DeliverySelect.jsx');
-var Card              = require('./components/Card.jsx');
-var OrderSummary      = require('./components/OrderSummary.jsx');
-
 var renderComponent = require('./helpers/renderComponent');
 
 // Layout
-renderComponent('basket-summary', BasketSummary);
+renderComponent('basket-summary', require('./components/BasketSummary.jsx'));
 
 // Index
-renderComponent('search', SearchBox);
-renderComponent('sort', SortButtonGroup);
+renderComponent('search', require('./components/SearchBox.jsx'));
+renderComponent('sort', require('./components/SortButtonGroup.jsx'));
 renderComponent('type', TagButtonGroup);
 renderComponent('condition', TagButtonGroup);
 renderComponent('price-range', RangesButtonGroup);
 renderComponent('weight-range', RangesButtonGroup);
-renderComponent('display', Display);
-renderComponent('pagination', Pagination);
+renderComponent('display', require('./components/Display.jsx'));
+renderComponent('pagination', require('./components/Pagination.jsx'));
 
 // Product
-renderComponent('addToBasket', AddToBasket);
-renderComponent('visited', Visited);
+renderComponent('addToBasket', require('./components/AddToBasket.jsx'));
+renderComponent('visited', require('./components/Visited.jsx'));
 
 // Basket
-renderComponent('basket-page', Basket);
+renderComponent('basket-page', require('./components/Basket.jsx'));
 
 // Checkout
-renderComponent('errors', Errors);
-renderComponent('countries', CountriesSelect);
-renderComponent('delivery', DeliverySelect);
-renderComponent('card', Card);
-renderComponent('order-summary', OrderSummary);
+renderComponent('errors', require('./components/Errors.jsx'));
+renderComponent('countries', require('./components/CountriesSelect.jsx'));
+renderComponent('delivery', require('./components/DeliverySelect.jsx'));
+renderComponent('card', require('./components/Card.jsx'));
+renderComponent('order-summary', require('./components/OrderSummary.jsx'));
+
+// Favourites
+renderComponent('favourites', require('./components/Favourites.jsx'));
