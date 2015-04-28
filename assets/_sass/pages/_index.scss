@@ -1,65 +1,65 @@
 #index-page aside {
-	margin-top: 5px;
-	#filters { display: none; }
+  margin-top: 5px;
+  #filters { display: none; }
 
-	@include media($medium-screen) {
-		@include span-columns(3);
+  @include media($medium-screen) {
+    @include span-columns(3);
 
-		#filters { display: initial; }
-		h1 { display: none; }
-	}
+    #filters { display: initial; }
+    h1 { display: none; }
+  }
 
-	@include media($large-screen) {
-		@include span-columns(2);
-		height: 750px;
-		margin-top: 15px;
-	}
+  @include media($large-screen) {
+    @include span-columns(2);
+    height: 750px;
+    margin-top: 15px;
+  }
 
-	h1 {
-		text-align: center;
-		font-size: 1.3em;
-		cursor: pointer;
-	}
+  h1 {
+    text-align: center;
+    font-size: 1.3em;
+    cursor: pointer;
+  }
 
-	.button-group { margin: 5px; }
+  .button-group { margin: 5px; }
 
-	input {
-		margin: 10px 5px;
-		border-color: silver;
-		width: 95%;
-	}
+  input {
+    margin: 10px 5px;
+    border-color: silver;
+    width: 95%;
+  }
 
-	button.ascending:after { content: '\2227'; }
-	button.descending:after { content: '\2228'; }
+  button.ascending:after { content: '\2227'; }
+  button.descending:after { content: '\2228'; }
 }
 
 #display {
-	@include media($medium-screen) {
-		@include span-columns(9);
-		@include omega;
-	}
+  @include media($medium-screen) {
+    @include span-columns(9);
+    @include omega;
+  }
 
-	@include media($large-screen) {
-		@include span-columns(10);
-		@include omega;
-	}
+  @include media($large-screen) {
+    @include span-columns(10);
+    @include omega;
+  }
 
-	.product {
-		@include shift(1);
-		@include span-columns(10);
+  .product {
+    @include shift(1);
+    @include span-columns(10);
 
     @include media($medium-screen) {
-			@include span-columns(4.5 of 9);
-			@include omega(2n);
-			@include shift(0);
-		}
+      @include span-columns(4.5 of 9);
+      @include omega(2n);
+      @include shift(0);
+    }
 
     @include media($large-screen) {
-    	@include omega-reset(2n);
-			@include span-columns(3.33 of 10);
-			@include omega(3n);
-		}
-	}
+      @include omega-reset(2n);
+      @include span-columns(3.33 of 10);
+      @include omega(3n);
+    }
+  }
 
   .no-products {
     text-align: center;
@@ -68,7 +68,7 @@
 }
 
 #pagination {
-	@include shift(2);
-	@include span-columns(9);
-	padding: 10px 0 25px;
+  @include shift(2);
+  @include span-columns(9);
+  padding: 10px 0 25px;
 }

@@ -2,48 +2,48 @@
 layout: default
 ---
 <main id='product-page'
-			itemscope
-			itemtype='http://schema.org/Product'
-			data-name='{{ page.name }}'>
-	<header>
-		<h1 itemprop='name'>{{ page.name }}</h1>
-		<h2 itemprop='offers' itemscope itemtype='http://schema.org/Offer'>
-			<span itemprop='priceCurrency' content='GBP'>£</span>
-			<span itemprop='price' content='{{ page.price }}'>{{ page.price }}</span>
-		</h2>
-	</header>
-	<div class='row'>
-		<aside>
-	    <img src='{{ site.image_prefix }}{{ page.image }}'
-	         alt='{{ page.name }}'
-	         itemprop='image'/>
-			<table>
-				<tr>
-					<th>Type</th>
-					<td>{{ page.type }}</td>
-				</tr>
-				<tr>
-					<th>Condition</th>
-					<td itemprop='itemCondition'>{{ page.condition }}</td>
-				</tr>
-				<tr>
-					<th>Weight</th>
-				  <td itemprop='weight'>{{ page.weight }}kg</td>
-				</tr>
-			</table>
-		</aside>
-		<article>
+      itemscope
+      itemtype='http://schema.org/Product'
+      data-name='{{ page.name }}'>
+  <header>
+    <h1 itemprop='name'>{{ page.name }}</h1>
+    <h2 itemprop='offers' itemscope itemtype='http://schema.org/Offer'>
+      <span itemprop='priceCurrency' content='GBP'>£</span>
+      <span itemprop='price' content='{{ page.price }}'>{{ page.price }}</span>
+    </h2>
+  </header>
+  <div class='row'>
+    <aside>
+      <img src='{{ site.image_prefix }}{{ page.image }}'
+           alt='{{ page.name }}'
+           itemprop='image'/>
+      <table>
+        <tr>
+          <th>Type</th>
+          <td>{{ page.type }}</td>
+        </tr>
+        <tr>
+          <th>Condition</th>
+          <td itemprop='itemCondition'>{{ page.condition }}</td>
+        </tr>
+        <tr>
+          <th>Weight</th>
+          <td itemprop='weight'>{{ page.weight }}kg</td>
+        </tr>
+      </table>
+    </aside>
+    <article>
       <img src='{{ site.image_prefix }}{{ page.big_image }}'
            alt='{{ page.name }}' />
-			<div id='addToBasket' data-name='"{{ page.name }}"'></div>
-			<div itemprop='description' class='description'>{{ content }}</div>
-		</article>
-	</div>
-	<div id='visited' data-begin='1' data-end='4'></div>
-	<section class='yotpo yotpo-main-widget'
-		data-product-id='{{ page.url }}'
-		data-name='{{ page.name }}'
-		data-url='{{ site.url }}{{ site.baseurl }}{{ page.url }}'
-		data-image-url='{{ site.image_prefix }}{{ page.image }}'>
-	</section>
+      <div id='addToBasket' data-name='"{{ page.name }}"'></div>
+      <div itemprop='description' class='description'>{{ content }}</div>
+    </article>
+  </div>
+  <div id='visited' data-begin='1' data-end='4'></div>
+  <section class='yotpo yotpo-main-widget'
+    data-product-id='{{ page.url }}'
+    data-name='{{ page.name }}'
+    data-url='{{ site.url }}{{ site.baseurl }}{{ page.url }}'
+    data-image-url='{{ site.image_prefix }}{{ page.image }}'>
+  </section>
 </main>

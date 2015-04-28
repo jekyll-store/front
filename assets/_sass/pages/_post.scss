@@ -1,0 +1,28 @@
+#post-page {
+  h1 {
+    font-size: 3em;
+    margin: 0;
+    text-align: center;
+
+    @include media($large-screen) { font-size: 4em; }
+  }
+
+  .post-meta {
+    box-shadow: 0 0 1px 1px #C3C3C3;
+    padding: 5px;
+    background: #eee;
+  }
+
+  img {
+    max-width: 50px;
+    border-radius: 50px;
+  }
+
+  img, h4, time {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+  }
+
+  p { margin: 35px; }
+}

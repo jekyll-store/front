@@ -1,0 +1,17 @@
+#blog-page {
+
+  li {
+    margin: 25px 0;
+    padding: 15px 35px;
+
+    &:nth-child(odd) {
+      background: #EEE;
+      a { color: #333; }
+    }
+
+    &:nth-child(even) {
+      background: #333;
+      a { color: #EEE; }
+    }
+  }
+}

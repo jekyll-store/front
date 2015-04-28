@@ -1,10 +1,10 @@
 {
   "name": "jekyll-store-front",
-  "version": "0.0.1",
   "description": "Jekyll Frontend for the Jekyll-Store ecommerce solution",
   "scripts": {
     "watch": "watchify -t reactify ./assets/_js/index.js -o ./assets/_js/compiled.js -v",
-    "build": "browserify -t reactify ./assets/_js/index.js | uglifyjs -c -m > ./assets/_js/compiled.js"
+    "build": "browserify -t reactify ./assets/_js/index.js | uglifyjs -c -m > ./assets/_js/compiled.js",
+    "serve": "bundle exec jekyll serve --baseurl ''"
   },
   "repository": {
     "type": "git",

@@ -1,28 +1,28 @@
 #favourites-page {
-	padding: 10px 0;
+  padding: 10px 0;
 
-	.product {
-		@include shift(1);
-		@include span-columns(10);
+  .product {
+    @include shift(1);
+    @include span-columns(10);
 
     @include media($medium-screen) {
-			@include span-columns(4 of 12);
-			@include omega(3n);
-			@include shift(0);
-		}
+      @include span-columns(4 of 12);
+      @include omega(3n);
+      @include shift(0);
+    }
 
     @include media($large-screen) {
-    	@include omega-reset(3n);
-			@include span-columns(3 of 12);
-			@include omega(4n);
-		}
-	}
+      @include omega-reset(3n);
+      @include span-columns(3 of 12);
+      @include omega(4n);
+    }
+  }
 
-	#favourites {
-	 margin-bottom: 3em;
-	}
+  #favourites {
+   margin-bottom: 3em;
+  }
 
-	#favourites, #visited { @include row; }
+  #favourites, #visited { @include row; }
 
   .no-products {
     text-align: center;

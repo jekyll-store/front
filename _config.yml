@@ -15,6 +15,7 @@ payment:
 image_prefix: 'http://res.cloudinary.com/jekyll-store/'
 paymillPublicKey: 323027826220f6ed944b96a1a47e35a0
 wake_up: 'http://jekyll-store-microservice.herokuapp.com/ping'
+disqus_shortname: 'jekll-store'
 
 # http://openexchangerates.github.io/accounting.js/#documentation
 accounting:
@@ -84,6 +85,7 @@ prose:
           label: Big Image
 
 # http://jekyllrb.com/docs/configuration/
+permalink: blog/:title
 sass:
   sass_dir: /assets/_sass
   style: :compressed
@@ -92,6 +94,12 @@ collections:
     output: true
     permalink: /:path/
 defaults:
+  -
+    scope:
+      path: '' # an empty string here means all files in the project
+      type: posts # previously `post` in Jekyll 2.2.
+    values:
+      layout: post
   -
     scope:
       path: ''

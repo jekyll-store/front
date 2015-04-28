@@ -19,13 +19,13 @@ window.loadJSON = require('./helpers/loadJSON');
 
 // After Load
 var afterLoad = require('reflux').joinLeading(
-	JSE.Stores.Products,
-	JSE.Stores.Countries,
-	JSE.Stores.DeliveryMethods
+  JSE.Stores.Products,
+  JSE.Stores.Countries,
+  JSE.Stores.DeliveryMethods
 );
 
 afterLoad.listen(function() {
-	require('./renderComponents');
-	require('./pages/product');
-	window.submitPurchase = require('./pages/checkout').submitPurchase;
+  require('./renderComponents');
+  require('./pages/product');
+  window.submitPurchase = require('./pages/checkout').submitPurchase;
 });
