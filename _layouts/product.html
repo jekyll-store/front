@@ -4,7 +4,7 @@ layout: default
 <main id='product-page'
       itemscope
       itemtype='http://schema.org/Product'
-      data-name='{{ page.name }}'>
+      data-name='{{ page.name | escape }}'>
   <header>
     <h1 itemprop='name'>{{ page.name }}</h1>
     <h2 itemprop='offers' itemscope itemtype='http://schema.org/Offer'>
@@ -34,8 +34,8 @@ layout: default
     </aside>
     <article>
       <img src='{{ site.image_prefix }}{{ page.big_image }}'
-           alt='{{ page.name }}' />
-      <div id='addToBasket' data-name='"{{ page.name }}"'></div>
+           alt='{{ page.name | escape }}' />
+      <div id='addToBasket' data-name='"{{ page.name | escape }}"'></div>
       <div itemprop='description' class='description'>{{ content }}</div>
     </article>
   </div>
