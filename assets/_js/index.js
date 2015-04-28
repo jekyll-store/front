@@ -12,6 +12,7 @@ window.JSE = require('jekyll-store-engine');
 require('jekyll-store-display');
 require('jekyll-store-visited');
 require('jekyll-store-favourites');
+require('jekyll-store-google-analytics');
 
 // Helpers
 window.toggle = require('./helpers/toggle');
@@ -27,5 +28,7 @@ var afterLoad = require('reflux').joinLeading(
 afterLoad.listen(function() {
   require('./renderComponents');
   require('./pages/product');
+  require('./pages/basket');
   window.submitPurchase = require('./pages/checkout').submitPurchase;
+  JSE.Actions.pageLoaded();
 });

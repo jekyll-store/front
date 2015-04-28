@@ -10,6 +10,7 @@ payment:
   tokenizer: Paymill
   currency: GBP
   hook: 'https://jekyll-store-microservice.herokuapp.com/purchase'
+tracking_id: 'UA-62379004-1'
 
 # Jekll-Store Front
 image_prefix: 'http://res.cloudinary.com/jekyll-store/'
