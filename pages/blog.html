@@ -8,7 +8,7 @@ title: Blog
   <ul>
   {% for post in site.posts %}
     <li>
-      <a href='{{ site.base.url }}{{ post.url }}'>
+      <a href='{{ site.baseurl }}{{ post.url }}'>
         <h2>{{ post.title }}</h2>
         <p>{{ post.excerpt }}</p>
         <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
