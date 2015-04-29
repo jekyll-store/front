@@ -4,6 +4,8 @@
 
 All products must have at least a unique name, price and image. All other meta-data can be used for filtering.
 
+If looking to export data from csv, see [csv_to_products](https://github.com/jekyll-store/csv_to_products).
+
 ## _config.yml
 
 * `defaultAddress`
