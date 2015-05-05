@@ -1,4 +1,4 @@
-# Jekll-Store/Front
+# Jekyll-Store/Front
 
 ## _products
 
