@@ -55,8 +55,9 @@ Jekyll-Store Front uses [Browersify](https://github.com/substack/node-browserify
 
 1. Install [node.js](https://nodejs.org/download/)
 2. Install the packages: `npm install`
-3. Watch whilst making changes: `npm run watch`
-4. Build the finalized version: `npm run build`
+3. Delete duplicate packages: `npm dedupe`
+4. Watch whilst making changes: `npm run watch`
+5. Build the finalized version: `npm run build`
 
 ## Contributing
 

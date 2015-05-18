@@ -1,17 +1,17 @@
 var React = require('react');
 var Reflux = require('reflux');
 var JSE = require('jekyll-store-engine');
+var I = require('seamless-immutable');
 
 var Pagination = React.createClass({
   mixins: [Reflux.listenTo(JSE.Stores.Display, 'onChange')],
   onChange: function(args) {
-    var page = args.display.get('page');
-    if(page) { this.setState(page.toJS()); }
+    if(args.display.page) { this.setState(args.display.page); }
   },
 
   getInitialState: function() {
     this.setPage(1);
-    return { current: 1, numbers: [1], prev: null, next: null };
+    return { current: 1, numbers: I([1]), prev: null, next: null };
   },
 
   prev: function() { this.setPage(this.state.prev); },
@@ -34,7 +34,7 @@ var Pagination = React.createClass({
           </li>
           <li>
             <ul>{
-                this.state.numbers.map(function(i) {
+                this.state.numbers.asMutable().map(function(i) {
                   return (
                     <li key={i}>
                       {this.state.current == i ?

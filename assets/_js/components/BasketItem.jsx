@@ -5,16 +5,15 @@ var money = require('../helpers/money');
 var BasketItem = React.createClass({
   set: function(e) {
     JSE.Actions.setItem({
-      name: this.name(),
+      name: this.props.item.name,
       quantity: e.target.value
     });
   },
   remove: function(e) {
-    JSE.Actions.removeItem({ name: this.name() });
+    JSE.Actions.removeItem({ name: this.props.item.name });
   },
-  name: function() { return this.props.item.get('name'); },
   render: function() {
-    var item = this.props.item.toJS();
+    var item = this.props.item;
     return (
       <tr className='product'>
         <td>
@@ -25,7 +24,7 @@ var BasketItem = React.createClass({
         </td>
         <td>{money(item.price)}</td>
         <td><input type='number' value={item.quantity} onChange={this.set} /></td>
-        <td>{money(item.price.times(item.quantity))}</td>
+        <td>{money(item.subtotal)}</td>
         <td onClick={this.remove}>x</td>
       </tr>
     );

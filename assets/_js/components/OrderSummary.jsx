@@ -6,13 +6,12 @@ var money = require('../helpers/money');
 var OrderSummary = React.createClass({
   mixins: [Reflux.connect(JSE.Stores.Order)],
   render: function() {
-    var order = this.state.order.toJS();
     return (
       <table>
         <tbody>
-          <tr><th>Item Total</th><th>{money(order.totals.price)}</th></tr>
+          <tr><th>Item Total</th><th>{money(this.state.order.totals.price)}</th></tr>
           {
-            order.adjustments.map(function(adjustment, i) {
+            this.state.order.adjustments.asMutable().map(function(adjustment, i) {
               return(
                 <tr key={i}>
                   <td>{adjustment.label}</td>
@@ -21,7 +20,7 @@ var OrderSummary = React.createClass({
               );
             })
           }
-          <tr><th>Total</th><th>{money(order.totals.order)}</th></tr>
+          <tr><th>Total</th><th>{money(this.state.order.totals.order)}</th></tr>
         </tbody>
       </table>
     );

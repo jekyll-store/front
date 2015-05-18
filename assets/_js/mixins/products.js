@@ -8,18 +8,13 @@ var Products = {
     Reflux.connect(JSE.Stores.Basket),
     Reflux.connect(JSE.Stores.Favourites)
   ],
-  inBasket: function(product) {
-    return this.state.basket.has(product.get('name'));
-  },
-  inFavourites: function(product) {
-    return this.state.favourites.contains(product);
-  },
   products: function(products) {
+    products = products.asMutable ? products.asMutable() : products;
     return products.map(function(product, i) {
       return (
         <Product product={product}
-                 inBasket={this.inBasket(product)}
-                 inFavourites={this.inFavourites(product)}
+                 inBasket={product.name in this.state.basket}
+                 inFavourites={product.name in this.state.favourites}
                  key={i} />
       );
     }, this);

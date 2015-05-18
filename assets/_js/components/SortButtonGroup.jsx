@@ -4,12 +4,9 @@ var JSE = require('jekyll-store-engine');
 var SortButtonGroup = React.createClass({
   getInitialState: function() { return { selected: null, direction: null }; },
 
-  ASC: JSE.Filters.Sort.ASC,
-  DESC: JSE.Filters.Sort.DESC,
-
   handleClick: function(field) {
     if(this.state.selected !== field) { this.select(field); return; }
-    if(this.state.direction === this.ASC){
+    if(this.state.direction === JSE.Filters.Sort.ASC){
       this.switchDirection(field);
     } else {
       this.deselect();
@@ -24,13 +21,13 @@ var SortButtonGroup = React.createClass({
   },
 
   select: function(field) {
-    this.setState({ selected: field, direction: this.ASC });
-    this.filter(field, this.ASC);
+    this.setState({ selected: field, direction: JSE.Filters.Sort.ASC });
+    this.filter(field, JSE.Filters.Sort.ASC);
   },
 
   switchDirection: function(field) {
-    this.setState({ direction: this.DESC });
-    this.filter(field, this.DESC);
+    this.setState({ direction: JSE.Filters.Sort.DESC });
+    this.filter(field, JSE.Filters.Sort.DESC);
   },
 
   deselect: function() {

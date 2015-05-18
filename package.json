@@ -16,13 +16,14 @@
     "url": "https://github.com/jekyll-store/front/issues"
   },
   "homepage": "https://github.com/jekyll-store/front",
-  "devDependencies": {
+  "dependencies": {
     "accounting": "^0.4.1",
-    "jekyll-store-engine": "0.1.3",
-    "jekyll-store-display": "0.0.2",
-    "jekyll-store-visited": "0.0.2",
-    "jekyll-store-favourites": "0.0.1",
-    "jekyll-store-google-analytics": "0.0.1",
+    "big.js": "^3.0.1",
+    "jekyll-store-engine": "0.2.4",
+    "jekyll-store-display": "0.1.0",
+    "jekyll-store-visited": "0.1.0",
+    "jekyll-store-favourites": "0.2.0",
+    "jekyll-store-google-analytics": "0.0.2",
     "react": "^0.13.1",
     "reactify": "^1.1.0",
     "reflux": "^0.2.7",

@@ -4,16 +4,16 @@ var money = require('../helpers/money');
 
 var Product = React.createClass({
   addToBasket: function() {
-    JSE.Actions.setItem({ name: this.props.product.get('name'), quantity: 1 });
+    JSE.Actions.setItem({ name: this.props.product.name, quantity: 1 });
   },
   addToFavourites: function() {
-    JSE.Actions.favourite({ name: this.props.product.get('name') });
+    JSE.Actions.favourite({ name: this.props.product.name });
   },
   removeFromFavourites: function() {
-    JSE.Actions.removeFromFavourites({ name: this.props.product.get('name') });
+    JSE.Actions.removeFromFavourites({ name: this.props.product.name });
   },
   render: function() {
-    var product = this.props.product.toJS();
+    var product = this.props.product;
     return (
       <li className='product'>
         <a href={'{{ site.baseurl }}' + product.url}>

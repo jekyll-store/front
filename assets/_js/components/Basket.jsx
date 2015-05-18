@@ -16,8 +16,8 @@ var Basket = React.createClass({
               <th>Product</th><th>Price</th><th>Quatity</th><th>Cost</th><th></th>
             </tr>
             {
-              this.state.basket.toList().map(function(item, i) {
-                return <BasketItem key={i} item={item} />;
+              Object.keys(this.state.basket).map(function(name, i) {
+                return <BasketItem key={i} item={this.state.basket[name]} />;
               }, this)
             }
             <tr>
@@ -25,7 +25,7 @@ var Basket = React.createClass({
             </tr>
             <tr>
               <td></td><td></td><td></td>
-              <td>{money(this.state.order.getIn(['totals', 'price']))}</td>
+              <td>{money(this.state.order.totals.price)}</td>
               <td></td>
             </tr>
             <tr>

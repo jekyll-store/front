@@ -9,7 +9,7 @@ var Visited = React.createClass({
   ],
   render: function() {
     var products = this.state.visited.slice(this.props.begin, this.props.end);
-    return products.isEmpty() ? null : (
+    return products.length == 0 ? null : (
       <div id='visited-products'>
         <h2>Recently Visited</h2>
         <ul>{this.products(products)}</ul>

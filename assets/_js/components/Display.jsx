@@ -8,12 +8,11 @@ var Display = React.createClass({
     require('../mixins/Products')
   ],
   render: function() {
-    var products = this.state.display.get('products');
     return (
       <div>
-        { products.isEmpty() ?
-          <h1 className='no-products'>No Products Found</h1> :
-          <ul>{this.products(products)}</ul>
+        { this.state.display.products.length > 0 ?
+          <ul>{this.products(this.state.display.products)}</ul> :
+          <h1 className='no-products'>No Products Found</h1>
         }
       </div>
     );
