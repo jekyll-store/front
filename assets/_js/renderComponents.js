@@ -26,7 +26,6 @@ renderComponent('basket-page', require('./components/Basket.jsx'));
 renderComponent('errors', require('./components/Errors.jsx'));
 renderComponent('countries', require('./components/CountriesSelect.jsx'));
 renderComponent('delivery', require('./components/DeliverySelect.jsx'));
-renderComponent('card', require('./components/Card.jsx'));
 renderComponent('order-summary', require('./components/OrderSummary.jsx'));
 
 // Favourites

@@ -7,7 +7,6 @@ url: 'http://www.jekyll-store.com'
 defaultAddress:
   country: GB
 payment:
-  tokenizer: Paymill
   currency: GBP
   hook: 'https://jekyll-store-microservice.herokuapp.com/purchase'
 tracking_id: 'UA-62379004-1'

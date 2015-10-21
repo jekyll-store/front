@@ -21,7 +21,7 @@
     "big.js": "^3.0.1",
     "browserify": "^11.0.1",
     "jekyll-store-display": "0.1.0",
-    "jekyll-store-engine": "0.2.6",
+    "jekyll-store-engine": "0.3.2",
     "jekyll-store-favourites": "0.2.0",
     "jekyll-store-google-analytics": "0.0.2",
     "jekyll-store-visited": "0.1.0",
