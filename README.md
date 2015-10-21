@@ -12,7 +12,6 @@ If looking to export data from csv, see [csv_to_products](https://github.com/jek
   * `country` - iso as defined in `/_data/countries.yml`
 
 * `payment`
-  * `tokenizer` - Name of a [Engine tokenizer](https://github.com/jekyll-store/engine#tokenizers), corresponding to a supported payment gateway.
   * `currency` - [ISO 4217](http://en.wikipedia.org/wiki/ISO_4217) currency code.
   * `hook` - url for your [Microservice](https://github.com/jekyll-store/microservice) instance or similar app for handling payment processing.
 
