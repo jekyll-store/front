@@ -1,5 +1,5 @@
 title: the Shaman's Village ~ where 
-description: 'Get Ready for a New Beginning, a New Certainty, a New Genesis!.'
+description: 'Get Ready for a New Beginning, a New Certainty, a New Genesis!'
 baseurl: 
 url: 
 
@@ -8,7 +8,7 @@ defaultAddress:
   country: CA
 payment:
   currency: GBP
-  hook: 'https://jekyll-store-microservice.herokuapp.com/purchase'
+  hook: 'https://webhooks.gitter.im/e/55afe00eabd0263f3084'
 tracking_id: 'UA-62379004-1'
 
 # Jekll-Store Front
