@@ -1,14 +1,14 @@
 title: the Shaman's Village ~ where 
 description: 'Get Ready for a New Beginning, a New Certainty, a New Genesis!'
-baseurl: 
-url: 
+baseurl: http://tsv.io/front
+url: http://tsv.io/
 
 # Jekyll-Store Engine
 defaultAddress:
   country: CA
 payment:
   currency: GBP
-  hook: 'https://webhooks.gitter.im/e/55afe00eabd0263f3084'
+  hook: 
 tracking_id: 'UA-62379004-1'
 
 # Jekll-Store Front
