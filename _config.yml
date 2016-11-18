@@ -1,6 +1,6 @@
 title: the Shaman's Village ~ where 
 description: 'Get Ready for a New Beginning, a New Certainty, a New Genesis!'
-url: http://abaset.github.io/front
+url: 'http://abaset.github.io/front'
 
 # Jekyll-Store Engine
 defaultAddress:
@@ -13,7 +13,7 @@ tracking_id: 'UA-62379004-1'
 # Jekll-Store Front
 image_prefix: 'http://res.cloudinary.com/jekyll-store/'
 paymillPublicKey: 323027826220f6ed944b96a1a47e35a0
-wake_up: 'http://jekyll-store-microservice.herokuapp.com/ping'
+wake_up: 'http://abaset.github.io/microservice'
 disqus_shortname: 'shamansvillage'
 
 # http://openexchangerates.github.io/accounting.js/#documentation
