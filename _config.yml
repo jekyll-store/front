@@ -1,7 +1,6 @@
 title: the Shaman's Village ~ where 
 description: 'Get Ready for a New Beginning, a New Certainty, a New Genesis!'
-baseurl: http://abaset.github.io/front/
-url: http://abaset.github.io
+url: http://abaset.github.io/front
 
 # Jekyll-Store Engine
 defaultAddress:
