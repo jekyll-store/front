@@ -1,0 +1,49 @@
+---
+---
+
+@charset "UTF-8";
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.card.medium {
+  .card-image {
+    max-height: 100%;
+    height: 220px;
+    img {
+      object-fit: cover;
+      object-position: 0 0;
+      height: 220px;
+    }
+  }
+}
+
+.slides img {
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+img.cover {
+  height: 100%;
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+$author_margin: 10px;
+div.author {
+  margin-right: $author_margin;
+  margin-left: $author_margin;
+}
+
+p {
+    text-align: justify;
+}
