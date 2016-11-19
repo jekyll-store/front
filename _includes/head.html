@@ -1,12 +1,16 @@
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <meta name='description' content='{{ site.description }}'>
-
-  <title>{% if page.title %}{{ page.title }} | {% elsif page.name %}{{ page.name }} | {% endif %}{{ site.title }}</title>
-
-  <link href='{{ site.baseurl }}/assets/app.css' rel='stylesheet' type='text/css'>
-  <link href='{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html', '' }}' rel='canonical'>
-  <script async src="//www.google-analytics.com/analytics.js"></script>
+    <meta charset="utf-8">
+    <meta name="keywords" content="{% if page.tags %}{{ page.tags | join: ', ' }}{% else %}{% for tag in site.tags %}{{ tag | first }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{ "/favicon.png" | prepend: site.baseurl }}">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" rel="stylesheet"  />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+	{% if page.prism == true %}
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/prism.css">
+	{% endif %}
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.baseurl }}/feed.xml" />
 </head>

@@ -1,0 +1,17 @@
+<header>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="container"><a href="#" data-activates="nav-bar" class="button-collapse"><i class="material-icons">menu</i></a></div>
+            <ul class="right hide-on-med-and-down ">
+                {% for link in site.navigation %}
+                {% if page.url == link.url %}<li class="active">{% else %}<li>{% endif %}<a href="{{ link.url | prepend: site.baseurl }}">{{ link.text }}</a></li>
+                {% endfor %}
+            </ul>
+            <ul class="side-nav" id="nav-bar">
+                {% for link in site.navigation %}
+                {% if page.url == link.url %}<li class="active">{% else %}<li>{% endif %}<a href="{{ link.url | prepend: site.baseurl }}">{{ link.text }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </nav>
+</header>
